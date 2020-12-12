@@ -731,6 +731,17 @@ strong {
     background-color: white;
     width: 100% !important;
 }
+@media only screen and (max-width: 600px) {
+    .main-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-group{
+        width: fit-content;
+    }
+}
+
+
 .main-center{
     display: flex;
     justify-content: center;
