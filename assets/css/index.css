@@ -12,7 +12,9 @@ body {
 .carousel-indicators-init {
     bottom: 80px !important;
 }
-
+.carousel-indicators{
+    display: flex !important;
+}
 .carousel {
     position: relative;
 }
@@ -692,6 +694,7 @@ strong {
 
 .card {
     margin-bottom: 25px;
+    padding: 15px;
 }
 .page-section{
     padding-top: 20px;
@@ -719,4 +722,54 @@ strong {
 .servicios-img-cont{
     width: 50%;
     height: auto;
+}
+.main-menu{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: white;
+    width: 100% !important;
+}
+.main-center{
+    display: flex;
+    justify-content: center;
+}
+.main-title{
+    color: #5a5a5a !important;
+    margin-top: 30px;
+}
+
+.center-tar{
+    display: flex;
+    justify-content: space-around ;
+}
+.title-center{
+    text-align: center;
+}
+.margin-title{
+    margin: 40px 0px;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+li > a{
+    color:#5a5a5a !important
+}
+.btn-serv{
+    color: #5a5a5a !important;
+}
+.body{
+    background-color: #e0c5ba !important;
+}
+.h5{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.tith2{
+    color: black !important;
 }
