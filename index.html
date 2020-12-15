@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.75.1">
+    <title>Zen-Tro Pro Felicidad</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!-- index.css aquí-->
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+            integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+            crossorigin="anonymous"></script>
+    <!-- estilos NICEPAGE -->
+    <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+    <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <style></style>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <!-- Este es el navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo20.svg" class="logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" aria-current="page" href="#quienes-somos-scroll"
+                           onclick="activate(0)">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios" onclick="activate(1)">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Nuestros-Espacios" onclick="activate(2)">Arriendo de Espacios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog" onclick="activate(3)">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos" onclick="activate(4)">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                        <div class="d-flex">
+                            <div style="position: relative;">
+                                <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                                    aria-label="Buscar" autocomplete="off">
+                                <div class="p-2" id="search-options"
+                                    style="background-color: white; position: absolute;width: 100%; display: none;">
+                                    <ul class="list-unstyled" id="list-options">
+                                        <li><a href="servicios.html">Terapia</a></li>
+                                        <li><a href="servicios.html">Reiki</a></li>
+                                        <li><a href="servicios.html">Consulta Psicologica</a></li>
+                                        <li><a href="servicios.html">Bio-Danza</a></li>
+                                        <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                                        <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                                        <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                                        <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+                        <img src="./assets/img/buscar.svg" class="buscador">
+                    </button>
+                </form>
+            </div>
+    </nav>
+
+    <!-- FIN navbar -->
+</header>
+<a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg"
+                                                                                class=""></a>
+<div>
+    <!-- INICIO CAROUSEL INICIAL -->
+    <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+        <ol class="carousel-indicators carousel-indicators-init">
+            <li data-target="#myCarousel" data-slide-to="0" class="toggle active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="toggle"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="toggle"></li>
+            <div id="quienes-somos-scroll"></div>
+        </ol>
+        <div class="carousel-inner principal">
+            <div class="carousel-item active">
+                <img src="./assets/img/carouselinicial1.jpg" class="img-carousel">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2 class="sanar">S A N A R</h2>
+                        <h5>Mediante terapias, mantienes un estado<br>
+                            de buena salud y bienestar integral</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/carouselinicial2.jpg" class="img-carousel">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2 class="sanar">C R E C E R</h2>
+                        <h5>Participando en talleres y grupos de práctica,<br>
+                            potencias tu poder interior y floreces</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/carouselinicial3.jpg" class="img-carousel">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2 class="sanar">C E L E B R A R</h2>
+                        <h5>Siendo parte de rituales y celebraciones,<br>
+                            compartes con otros y generas abundancia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="quienes-somos"  style="min-height: 690px;" class="carousel quienes-somos  slide" data-interval="false" data-ride="carousel">
+        <ol class="d-none d-lg-flex carousel-indicators">
+            <li data-target="#quienes-somos" data-slide-to="0" class="toggle active"></li>
+            <li data-target="#quienes-somos" data-slide-to="1" class="toggle"></li>
+            <li data-target="#quienes-somos" data-slide-to="2" class="toggle"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item item-quienes-somos active" data-interval="3000">
+                <h2 class="quienes-somos-title">¿Quiénes somos?</h2>
+                <div class="horizontal-line"></div>
+                <div class="">
+                    <div class="row flex-space">
+                        <div class='col-12 col-lg-5'>
+                            <iframe class="video" width="500" height="315"
+                                    src="https://www.youtube.com/embed/dC7XUh9tpls" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class='col-12 col-lg-5'>
+                            <div class="fondo-verde">
+                                <div class="texto-quienes-somos">
+                                    <p>El primer centro de salud y bienestar integral para mujeres y sus familias en
+                                        Peñalolén.
+                                        Estamos en Las Pircas, plena precordillera. Somos un equipo de profesionales de
+                                        distintos ámbitos liderado por Viviana Alvarado Vera. Ella es arteterapeuta,
+                                        terapeuta
+                                        complementaria y experta en bienestar integral femenino.<br><br>
+                                        Todos aplicamos un enfoque integral del ser, con el Modelo de la Estrella ©.
+                                        Gracias a
+                                        esto, podrás sentirte realmente bien en todas estas dimensiones: cuerpo,
+                                        emoción,
+                                        pensamiento, espíritu y energía.
+                                    </p>
+                                    <div id="servicios"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item-quienes-somos">
+                <h2 class="quienes-somos-title">NUESTRO EQUIPO</h2>
+                <div class="horizontal-line"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 border-rigth">
+                            <img src="./assets/img/profesionales/viviana.alvarado.png"
+                                 alt="" class="user-img">
+                            <h4 class="subt-equipo">Viviana Alvarado</h4>
+                            <p>Arteterapeuta, terapeuta complementaria, experta en bienestar integral femenino y facilitadora de círculos y rituales para mujeres. Directora del ZEN-TRO Profelicidad Peñalolén.</p>
+                        </div>
+                        <div class="col-3 border-rigth">
+                            <img src="./assets/img/profesionales/daniel.seisdedos.png" alt="" class="user-img">
+                            <h4 class="subt-equipo">Daniel Seisdedos</h4>
+                            <p>Coach de vida y laboral, terapeuta complementario, postitulado en PNL y en coaching transpersonal, creador de la Felicidología y autor de autoayuda. Coordinador académico del ZEN-TRO.
+                            </p>
+                        </div>
+                        <div class="col-3 border-rigth">
+                            <img src="./assets/img/profesionales/pao.jpeg" alt="" class="user-img">
+                            <h4 class="subt-equipo">Paola Castillo</h4>
+                            <p>Psicóloga clínica, terapeuta complementaria, master en PNL, diplomada en Psicología Transpersonal Integral y maestra de Tai Chi.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="./assets/img/profesionales/daniela.castro.png" alt="" class="user-img">
+                            <h4 class="subt-equipo">Daniela Castro</h4>
+                            <p>Médico general integrativa y terapeuta floral, postitulada en coaching de vida y transpersonal, terapia neural y medicina biorreguladora y metabólica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item-quienes-somos">
+                <h2 class="quienes-somos-title">NUESTRO EQUIPO</h2>
+                <div class="horizontal-line"></div>
+                <div class="container d-none d-lg-block">
+                    <div class="row flex-event">
+                        <div class="col-3 border-rigth">
+                            <img src="./assets/img/profesionales/caro.jpeg"
+                                 alt="" class="user-img">
+                            <h4 class="subt-equipo">Carolina Bascuñán</h4>
+                            <p>Kinesióloga integral, terapeuta de bioenergética y biomagnetismo y profesora de Chi Kung.</p>
+                        </div>
+                        <div class="col-3 border-rigth">
+                            <img src="./assets/img/profesionales/marisol.herrera.png" alt="" class="user-img">
+                            <h4 class="subt-equipo">Marisol Herrera</h4>
+                            <p>Chef internacional experta en comida saludable, creadora de la terapia Madre Nutricia y reikista en silla.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="./assets/img/profesionales/ingrid.bucarey.png" alt="" class="user-img">
+                            <h4 class="subt-equipo">Ingrid Bucarey</h4>
+                            <p>Masoterapeuta universitaria integral, experta en reflexología, masaje con piedras calientes y masaje corporal descontracturante.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN CAROUSEL QUIENES SOMOS-->
+
+    <!-- S E R V I C I O S  -->
+
+    <section class="page-section servicios-container">
+        <div class="">
+            <h2 class="text-center mt-0 servicios-title">Servicios</h2>
+            <div class="row servicios-cont">
+                <div class="col-lg-4 col-md-6 text-center item-servicios">
+                    <a href="servicios.html">
+                        <div class="mt-5 servicios-item">
+                            <div class="cont-serv">
+                                <h3 class="h4 mb-2 servicios-subtitle">S A N A R</h3>
+                                <h4 class="servicios-subtitle2">Con terapias</h4>
+                            </div>
+                            <img src="assets/img/sanar.jpeg" alt="" class="servicios-img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center item-servicios">
+                    <a href="servicios.html">
+                        <div class="mt-5 servicios-item">
+                            <div class="cont-serv">
+                                <h3 class="h4 mb-2 servicios-subtitle">C R E C E R</h3>
+                                <h4 class="servicios-subtitle2">Con talleres y grupos de práctica</h4>
+                            </div>
+                            <img src="assets/img/crecer.jpeg" alt="" class="servicios-img">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center item-servicios">
+                    <a href="servicios.html">
+                        <div class="mt-5 servicios-item">
+                            <div class="cont-serv">
+                                <h3 class="h4 mb-2 servicios-subtitle">C E L E B R A R</h3>
+                                <h4 class="servicios-subtitle2">Con rituales y celebraciones</h4>
+                            </div>
+                            <img src="assets/img/celebrar.jpeg" alt="" class="servicios-img">
+                            <div style="position: absolute; bottom: 80px;" id="Nuestros-Espacios"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- nuestros espacios -->
+    <div class="album" style="padding-top: 40px; background-color: #e3f4f1;">
+
+        <h2 class="text-center mt-0">Arriendo de Espacios</h2>
+        <p class="text-center">Si estas interesado en alguno de nuestro espacios por favor, <a class="nav-active"
+                                                                                               href="https://wa.me/56961881922">contáctanos</a>.
+        </p>
+
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal19"
+                             style="height: 180px; width: 100%; background-image: url('assets/img/espacioazul.webp'); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal19">
+                            <p class="card-text">Espacio Azul</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel19">Espacio Azul</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/espacioazul.webp">
+                                        <p>Espacio amplio, cómodo y acogedor. Inspira a la meditación grupal y la
+                                            alineación de la mente con el espíritu.<br/><br/>
+                                            <strong>Capacidad:</strong> 17 personas.<br/><br/>
+                                            <strong>Capacidad ampliada:</strong> En conjunto con el Espacio Turquesa, en
+                                            formato charla, 25 personas.<br/><br/>
+                                            <strong>Ubicación:</strong> Interior.<br/><br/>
+                                            <strong>Forma:</strong> Óvalo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Azurita, Malaquita, Lapislazuli y
+                                            Sodalita.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal18"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/ESPACIOTURQUESA.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal18">
+                            <p class="card-text">Espacio Turquesa</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel18">Espacio Turquesa</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/ESPACIOTURQUESA.webp">
+                                        <p>Espacio íntimo y agradable. Inspira a la conversación y el crecimiento
+                                            personal conjunto y el equilibrio energético.<br/><br/>
+                                            <strong>Capacidad:</strong>12 personas.<br/><br/>
+                                            <strong>Capacidad ampliada:</strong> En conjunto con el Espacio Azul, en
+                                            formato charla, 25 personas.<br/><br/>
+                                            <strong>Ubicación:</strong> Interior.<br/><br/>
+                                            <strong>Forma:</strong> Óvalo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Turquesa. <br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal17"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/espacioamatista.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal17">
+                            <p class="card-text">Espacio Amatista</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel17">Espacio Amatista</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/espacioamatista.webp">
+                                        <p>espacio amplio, rústico y lleno de sombra. Cubierto por un parrón de uvas y
+                                            passiflora o flor de la pasión. Inspira el equilibrio emocional y las
+                                            conversaciones profundas que transmutan el miedo, la impaciencia
+                                            y el dolor en pensamiento crítico, tranquilidad, optimismo y una alta
+                                            espiritualidad (chakra coronario).<br/><br/>
+
+                                            <strong>Capacidad:</strong> 15 personas.<br/><br/>
+                                            <strong>Ubicación:</strong> Exterior.<br/><br/>
+                                            <strong>Forma:</strong> Rectángulo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Amatista.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal16"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/Rincขn_Zen_Cuarzo_Rosa.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal16">
+                            <p class="card-text">Rincón Zen Cuarzo Rosa</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel16">Rincón Zen Cuarzo Rosa</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/Rincขn_Zen_Cuarzo_Rosa.webp">
+                                        <p>Espacio acogedor, fresco en las mañanas de verano y cálido en las tardes de
+                                            invierno. Inspira la contemplación y la conexión con el amor a sí mismo y a
+                                            los demás.<br/><br/>
+                                            <strong>Capacidad:</strong> 6 personas.<br/><br/>
+                                            <strong>Ubicación:</strong> Exterior.<br/><br/>
+                                            <strong>Forma:</strong> Medialuna.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Cuarzo rosado.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal15"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/salasanaciondemandalas.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal15">
+                            <p class="card-text">Sala de Sanación Mandalas</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel15">Sala de Sanación Mandalas</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/salasanaciondemandalas.webp">
+                                        <p>Espacio amplio y cálido que tiene dos sectores: para conversación y para
+                                            terapia con camilla. Inspira paz y tranquilidad y ayuda a regular la
+                                            ansiedad y el estrés.<br/><br/>
+                                            <strong>Ubicación:</strong> Interior.<br/><br/>
+                                            <strong>Forma:</strong> Rectángulo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Combarbalita.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal14"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/Sala_de_Sanacion_Acuarelas.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal14">
+                            <p class="card-text">Sala de Sanación Acuarelas</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel14">Sala de Sanación Acuarelas</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/Sala_de_Sanacion_Acuarelas.webp">
+                                        <p>Espacio simple e íntimo orientado a las terapia con camilla. Potencia el
+                                            equilibrio físico, emocional y mental. Dispone de baño propio.<br/> Es para
+                                            consultas individuales.<br/><br/>
+                                            <strong>Ubicación:</strong> Interior <br/><br/>
+                                            <strong>Forma:</strong> Rectángulo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Esmeralda y Malaquita.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal13"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/espacio_ámbar.webp); background-position: center; background-size: cover;"></div>
+                        <div class="card-body" data-toggle="modal" data-target="#exampleModal13">
+                            <p class="card-text">Espacio Ámbar</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel13">Espacio Ámbar</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/espacio_ámbar.webp">
+                                        <p>Lugar amplio y acogedor. Inspira a la creatividad, el buen humor, la
+                                            vitalidad, la sabiduría y la salud. .<br/><br/>
+                                            <strong>Capacidad:</strong> a) para talleres, 15 a 25 personas.<br/> b) para
+                                            charlas, hasta 40 personas sentadas.<br/><br/>
+                                            <strong>Ubicación:</strong> interior-exterior (winter garden).<br/><br/>
+                                            <strong>Forma:</strong> Rectángulo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> Ámbar y citrino.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div data-toggle="modal" data-target="#exampleModal12"
+                             style="height: 180px; width: 100%; background-image: url(assets/img/rinconzencuarso.webp); background-position: center; background-size: cover;">
+                        </div>
+                        <div class="card-body" id="blog" data-toggle="modal" data-target="#exampleModal12">
+                            <p class="card-text">Rincón Zen Cuarzo</p>
+                        </div>
+                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel12">Rincón Zen Cuarzo</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="spacio-image" src="assets/img/rinconzencuarso.webp">
+                                        <p>Espacio simple y muy íntimo. Inspira el silencio, la purificación energética,
+                                            la limpieza espiritual y la salud integral, la meditación personal, la
+                                            autoayuda y la autosanación.<br/><br/>
+
+                                            <strong>Capacidad:</strong> 2 personas.<br/><br/>
+                                            <strong>Ubicación:</strong> exterior.<br/><br/>
+                                            <strong>Forma:</strong> rectángulo.<br/><br/>
+                                            <strong>Energía de gemas:</strong> cuarzo blanco.<br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- B L O G  -->
+    <div class="blog-container">
+        <div class="title-sec">
+            <h2 class="text-center mt-0 blog-title">B L O G</h2>
+        </div>
+        <div class="row tarjetas-content">
+            <div class="col-12 col-lg-4">
+                <div class="blog-item">
+                    <img src="assets/img/blog1.jpeg" alt="" class="img-blog">
+                    <h5 class="subtitle-blog">Distinciones básicas de la Felicidología</h5>
+                    <div class="content-blog">
+                        <p class="">Qué es la Felicidología y cuáles son algunas de sus principales distinciones.
+                            Principalmente, en que se diferencian la alegría y la felicidad.</p>
+                    </div>
+                    <a href="blog1.html" class="btn btn btn-blog btn-zoom">
+                        leer completo
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class=" blog-item">
+                    <img src="assets/img/blog2.jpeg" alt="" class="img-blog">
+                    <h5 class="subtitle-blog">La felicidad no es un objetivo, sino un camino de vida</h5>
+                    <div class="content-blog">
+                        <p class="">La cultura occidental se equivocó al endiosar la idea de Aristóteles sobre que la
+                            felicidad es fin supremo o gran objetivo de la vida. </p>
+                    </div>
+                    <a href="blog2.html" class="btn btn btn-blog btn-zoom">
+                        leer completo
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class=" blog-item">
+                    <img src="assets/img/blog3.jpeg" alt="" class="img-blog">
+                    <h5 class="subtitle-blog">Seis claves actitudinales para ser felices en el trabajo</h5>
+                    <div class="content-blog">
+                        <p class="">Quien labora en jornada completa está más tiempo despierto en su trabajo que en su
+                            casa.</p>
+                    </div>
+                    <a href="blog3.html" class="btn btn btn-blog btn-zoom">
+                        leer completo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row contactanos-container flex-space">
+    <div class=" col-12 col-xl-5 page-section " id="contactanos">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <h3 class="page-section-heading text-center text-uppercase mb-0 title-contactanos ">Contáctanos</h3>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row ">
+                <div class="col-12 col-xl-5 mx-auto ">
+                    <form id="formContacto">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label for="inputNombre">Nombre</label>
+                                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required name="nombre"
+                                       pattern="[A-Za-z]{3,40}"
+                                       oninvalid="setCustomValidity('Este campo es requerido y no debe poseer números ni caracteres especiales')"
+                                       onchange="try{setCustomValidity('')}catch(e){}"
+                                       translate="yes">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputApellido">Apellido</label>
+                                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" name="apellido"
+                                       required pattern="[A-Za-z]{3,40}"
+                                       oninvalid="setCustomValidity('Este campo es requerido y no debe poseer números ni caracteres especiales')"
+                                       onchange="try{setCustomValidity('')}catch(e){}"
+                                       translate="yes">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label for="inputCorreo">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="inputCorreo" name="email"
+                                       aria-describedby="correoHelp" placeholder="Ingrese un correo"
+                                       oninvalid="setCustomValidity('Este campo es requerido y debe poseer formato mail: ejemplo@mail.com')"
+                                       onchange="try{setCustomValidity('')}catch(e){}"
+                                       required>
+                            </div>
+                            <div class="col-12">
+                                <label>Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" required="required" name="mensaje"
+                                          data-validation-required-message="Please enter a message."
+                                          aria-invalid="false"
+                                          oninvalid="setCustomValidity('Este campo es requerido')"
+                                          onchange="try{setCustomValidity('')}catch(e){}"
+                                ></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="col-12">
+                                <input name="submit" onclick="enviarCorreo()" type="submit" value="Enviar"
+                                       class="btn btn-primary submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 page-section2">
+        <h3 class="page-section-heading text-center text-uppercase mb-0 title-contactanos ">Ubicación</h3>
+        <div id="googleMap " class="googleMap"></div>
+    </div>
+    <div class="d-none d-xl-block separator-line"></div>
+</div>
+
+
+<footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #d6ab9a; color:black">
+    <class class="row text-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 bline">
+            <h6>LINKS</h6>
+            <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+            <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+        </div>
+        <div class="col-md-2 bline social-footer">
+            <h6>SÍGUENOS</h6>
+            <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+            </p>
+            <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+            </p>
+            <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+            </p>
+        </div>
+        <div class="col-md-2 bline">
+            <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+        </div>
+        <div class="col-md-2 bline">
+            <h6>UBÍCANOS</h6>
+            <p>
+                <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                    La Pradera 4940, Peñalolen<br> Región
+                    Metropolitana,<br> Santiago. Chile</a></p>
+        </div>
+        <div class="col-md-2">
+
+            <h6>CONTÁCTANOS</h6>
+            <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+            <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+        </div>
+        <div class="col-md-1"></div>
+    </class>
+</footer>
+</body>
+
+<script>
+    $("form").attr("lang", "es");
+
+    function enviarCorreo(){
+        validate()
+        var to = "contacto@profelicidad.com";
+        var subject = "Consulta por servicio"
+        var form = document.getElementById("formContacto");
+        var bodyText = "Estimado(a) Emprendedor(a):\n";
+        var nombre = form.nombre.value;
+        var correo = form.email.value;
+        var apellido = form.apellido.value;
+        var mensaje = form.mensaje.value;
+        bodyText = bodyText + " " + "Mi nombre es: " + nombre + " y quiero consultarle lo siguiente: " + consulta + "\n\n";
+        bodyText = bodyText + "Saludos cordiales";
+        bodyText = bodyText + "Telefono:" + telefono + "";
+        bodyText = bodyText + "Correo:" + correo + "";
+        var action = 'mailto:' + escape(to) + '?Subject=' + escape(subject) + '&Body=' + escape(bodyText ? bodyText : ' ');
+        form.setAttribute('method', 'post');
+        form.setAttribute('enctype', 'text/plain');
+        form.setAttribute('action', action);
+        // form.submit();
+
+    }
+
+    function validate() {
+        const onlyLetters = /^[A-Za-z]+$/
+        const emailyLetters = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+        let name = document.getElementById("inputNombre");
+        let apellido = document.getElementById("inputApellido");
+        let email = document.getElementById("inputCorreo");
+        let description = document.getElementById("message");
+        if(!onlyLetters.test(name.value)){name.classList.add("input-error"); return false;}else{name.classList.remove("input-error")};
+        if(!onlyLetters.test(apellido.value)){apellido.classList.add("input-error"); return false;}else{apellido.classList.remove("input-error")}
+        if(!emailyLetters.test(email.value) ){ email.classList.add("input-error"); return false;}else{email.classList.remove("input-error")}
+        if(!description.value){ description.classList.add("input-error"); return false;}else{description.classList.remove("input-error")}
+    }
+
+    function activate(key) {
+        let li = document.getElementsByClassName('nav-link');
+        li[0].classList.remove("nav-active");
+        li[1].classList.remove("nav-active");
+        li[2].classList.remove("nav-active");
+        li[3].classList.remove("nav-active");
+        li[4].classList.remove("nav-active");
+        li[key].classList.add("nav-active");
+    }
+
+    function myMap() {
+        const myLatLng = {
+            lat: -33.5048221,
+            lng: -70.5258002
+        };
+        var mapProp = {
+            center: new google.maps.LatLng(-33.5048221, -70.5258002),
+            zoom: 16,
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+
+            label: {
+                labelClass: "my-custom-class-for-label ",
+                fontWeight: 'bold',
+                fontSize: "20px ",
+                text: "Zen-Tro Profelicidad ",
+            }
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.75.1">
+  <title>Zen-Tro Pro Felicidad</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- index.css aquí-->
+  <link rel="stylesheet" href="assets/css/blog-styles.css" media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+    integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+    crossorigin="anonymous"></script>
+  <!-- estilos NICEPAGE -->
+  <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+  <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <style></style>
+  <link rel="icon" href="./assets/img/logo.png">
+  <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+
+  
+
+</head>
+
+<body class="bg-celeste-claro">
+  <header>
+    <!-- Este es el navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo20.svg" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link nav-active" aria-current="page" href="#quienes-somos" onclick="activate(0)">¿Quiénes
+                Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicios" onclick="activate(1)">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Nuestros-Espacios" onclick="activate(2)">Nuestros Espacios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#blog" onclick="activate(3)">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contactanos" onclick="activate(4)">Contáctanos</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="d-flex">
+                <div style="position: relative;">
+                    <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                        aria-label="Buscar" autocomplete="off">
+                    <div class="p-2" id="search-options"
+                        style="background-color: white; position: absolute;width: 100%; display: none;">
+                        <ul class="list-unstyled" id="list-options">
+                          <li><a href="servicios.html">Terapia</a></li>
+                          <li><a href="servicios.html">Reiki</a></li>
+                          <li><a href="servicios.html">Consulta Psicologica</a></li>
+                          <li><a href="servicios.html">Bio-Danza</a></li>
+                          <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                          <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                          <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                          <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+            <img src="./assets/img/buscar.svg" class="buscador">
+        </button>
+    </form>
+        </div>
+    </nav>
+
+    <!-- FIN navbar -->
+  </header>
+  <a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg"
+      class=""></a>
+
+
+
+
+
+
+  <main class="mb-5">
+
+    <div class="container mt-5">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Title -->
+          <h2 class="text-justify titulo-blog mt-4 margin-title servicios-title">Distinciones básicas de la Felicidología</h2>
+<br>
+          <!-- Author -->
+          <p class="lead">
+            por
+            Daniel Seisdedos
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Publicado en Julio, 2017</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="./assets/img/Elfelicidologo.png" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead"> <b>Qué es la Felicidología y cuáles son algunas de sus principales distinciones.
+              Principalmente, en que se diferencian la alegría y la felicidad.</b>
+
+          <p>Acuñé el concepto de “Felicidología” y el adjetivo de “felicidólogo” en 2011. La Felicidología es el
+            estudio y la práctica de la felicidad. Busca comprenderla y vivirla como algo más allá de una época y de
+            forma más concreta que abstracta.</p>
+
+          <p>El logotipo de este concepto muestra tres caras: una triste o adolorida, una indiferente o serena y una
+            sonriente o alegre. Tienen el sentido de comunicar que, en los tres casos, una persona puede ser feliz. la
+            felicidad no se relaciona con la emoción o el estado de ánimo del momento. Es un estado más profundo y
+            permanente.</p>
+
+
+          <p>Me llama la atención que no existiera un concepto para "el estudio de la felicidad" o "la práctica de la
+            felicidad", lo cual probablemente tiene que ver con que la felicidad ha sido estudiada históricamente no por
+            una disciplina, sino por muchas. Y, más que estudiada, ha sido opinada. Existen innumerables definiciones de
+            la felicidad. Filósofos, psicólogos, economistas, educadores, personas de cualquier profesión u oficio
+            podrían tener una definición de felicidad. </p>
+
+
+          <p>De hecho, me ha tocado ver tantas, que afirmo que no existe acuerdo, ni siquiera en la comunidad de
+            psicólogos, sobre qué es la felicidad. Si bien la mayoría de ellos coincide en algo así como “un estado
+            mental subjetivo de bienestar”, existen varias teorías distintas sobre qué es y qué la produce.
+
+          </p>
+          <br>
+          <br>
+          <b>La felicidad como camino y no como destino. </b>
+          <br>
+          <br>
+
+          <p>Tengo mi propia teoría de la felicidad. Creo que esta teoría, basada en decenas de autores y cientos de
+            conversaciones con personas en mis talleres, puede ser un comienzo en la búsqueda de una comprensión más
+            profunda del concepto y del fenómeno de la felicidad.</p>
+
+          <img class="float-left" src="assets/img/daniel en charla.webp" style="margin-right: 15px;" width="40%">
+          <p> Fue en 1997 cuando redacté mi misión en la vida. Le hice caso a mi gran maestro literario Stephen Covey,
+            que en paz descanse. En su libro Los siete hábitos de la gente altamente efectiva invita al lector a
+            redactar una misión personal, tal como las organizaciones tienen su misión institucional. Y mi misión es
+            esta: “Ayudar a otras personas a ser más felices y autorrealizadas”. El prefijo “auto” lo introduje hace
+            menos tiempo, en 2008. Fue para reforzar que la realización personal, en la vida, es principalmente
+            responsabilidad propia, más allá de las circunstancias que nos toca vivir. En otras palabras, la
+            proactividad.</p>
+
+
+
+          <p> Para esta teoría, me baso en 20 años trabajando en la felicidad, primero como profesor universitario y
+            luego, desde 2001, como consultor de organizaciones y a mis estudios de los últimos 4 en Psicología
+            Positiva. Eso ha implicado conversar del tema con miles de personas en talleres de aprendizaje.</p>
+
+
+          <p>Felicidad es un estado de profunda conexión con la esencia de la vida. Dicha esencia considera una
+            combinación entre dolor y amor. La vida tiene momentos desagradables y momentos agradables, tiene oscuridad
+            y tiene luz, dificultades y bendiciones.</p>
+
+
+          <p>Es clave aprender a aceptar. Mientras más peleamos contra la vida, más infelices somos. Hay una gran
+            diferencia entre aceptar y resignarse. Aceptar nace de decidir. Resignarse surge de estar obligado. Y ya en
+            hacer las cosas no por obligación, sin por decisión hay una base cierta para sentir ese “bienestar interno o
+            psicológico básico”, como algunos definen a la felicidad. Es necesario hacer algunas distinciones.</p>
+          <br>
+
+          <p><b>Plenitud en vez de "planitud"</b></p>
+
+          <p></p>Ser feliz es vivenciar ese estado de profunda conexión con la esencia de la vida. La felicidad es
+          conexión, aceptación, una tranquilidad profunda que da la paz de no estar peleando. La felicidad es plenitud
+          en vez de planitud. Felicidad es un estado de centramiento y equilibrio superior a los avatares de la vida.
+          Felicidad es vivir a concho. </p>
+
+
+          <p>Ser feliz es aceptar lo que venga, sea positivo o negativo, y tener un bienestar interior permanente, más
+            allá de las circunstancias. Desde la Psicología Positiva, se ha descubierto que lo que llamo “estado de
+            conexión o aceptación” tiene mucho que ver con el agradecimiento. Cuando agradecemos lo que la vida nos da,
+            podemos estar siempre en dos acciones centrales: disfrutando (cuando las situaciones son agradables) y
+            creciendo o aprendiendo (cuando las situaciones son desagradables).</p>
+
+
+          <p>Ser feliz es pasar del “por qué a mí” al “para qué a mí”. Somos felices cuando, en vez de despotricar
+            contra aquellas circunstancias duras, las aceptamos y nos preguntamos: “¿Qué es lo que la vida me quiere
+            decir”? O bien: “¿Qué es lo que necesito aprender de todo esto?”. Descubrir el “para qué” de las cosas
+            muestra nuestro nivel de madurez. Algunos lo tienen ya de niños, otros lo alcanzan de jóvenes, otros de
+            viejos, y algunos desperdician su vida renegando de ella en vez de aprovecharla para crecer. Necesitamos, en
+            las situaciones difíciles, encontrar el sentido de esas circunstancias. El sentido está muchas veces dado
+            por el aprendizaje. </p>
+          <img class="float-right" src="assets/img/mujer y guitarra.webp" style="margin-left: 15px;" width="40%">
+
+
+          <p>Y afortunadamente tenemos la capacidad de la resiliencia. Ser feliz es el camino de tomarse la vida como
+            una escuela de crecimiento personal cuando no la estamos disfrutando.</p>
+
+
+          <p>Por eso, afirmo que la felicidad es un camino, no es el objetivo de la vida. La felicidad es una forma de
+            vivir la vida: estando conectado y reconciliado con la vida.</p>
+
+          <p>Creo que el objetivo de la vida es la autorrealización, es decir, convertirnos en el mejor ser que podamos
+            ser. No en una lucha por ser mejores, sino en un florecimiento de nuestras potencialidades: desarrollar todo
+            aquello que esté en nuestras manos desarrollar. Se relaciona con la parábola de los talentos. La Psicología
+            Positiva habla de “fortalezas”. El objetivo de la existencia es ser el ser que podemos ser. No somos
+            responsables de cómo llegamos al mundo pero sí de cómo nos vamos de él. Y esa responsabilidad no debe ser
+            vista como una carga, sino como una oportunidad hermosa.</p>
+
+          <p>Felicidad es también una actitud de agradecimiento. Somos felices cuando dejamos de reclamar y nos ponemos
+            a agradecer y a hacer a partir de lo que sí tenemos y no de lo que no tenemos. Felicidad no es hacer lo que
+            queremos, sino querer lo que hacemos. Cuando aprendemos eso, podemos alcanzar el desafío de hacer lo que
+            queremos. Pero la felicidad está en la primera actitud (agradecimiento, aceptación, amor), no al final del
+            camino. La felicidad no es el destino, sino el camino. No es un objetivo ni un fin, como señaló erradamente
+            Aristóteles, sino una manera de vivir.</p>
+
+
+          <br>
+
+          <p><b>La alegría es otra cosa </b></p>
+
+          <img class="float-left" src="assets/img/mujeres alegria .webp" style="margin-right: 15px;" width="40%">
+
+
+
+          <p>Ser alegre, en cambio, es una cuestión de temperamento. Hay personas de temperamento sanguíneo. Normalmente
+            ellas son las que están más permanentemente en el estado de ánimo de la alegría. Es porque les nace. La
+            alegría no tiene que ver necesariamente con la felicidad. La alegría es una emoción. Aunque muchos dicen:
+            “Siento alegría, siento felicidad”, como una extensión de lo mismo, en mi opinión no es así. La alegría,
+            como emoción, se puede convertir en estado de ánimo, que es una sensación mantenida en el tiempo. Pero no es
+            lo mismo el estado de alegría que el de felicidad.</p>
+
+          <p>Estudios de Psicología Positiva demuestran que las personas alegres son alrededor de la mitad. Y afirman
+            que, si alegría y felicidad fueran lo mismo, la felicidad estaría vedada para el 50% de la humanidad. Yo
+            creo que todos somos potencialmente felices. La felicidad, una actitud y una manera de vivir, no es sinónimo
+            de alegría.</p>
+
+          <p>La alegría es una emoción, considerada una de las emociones básicas, en efecto. Es más apropiado, incluso,
+            decir: “Estar alegre”, porque la emoción es una sensación, por definición, más bien efímera.</p>
+
+          <p>Entonces, planteemos algunas ideas ancla para no volver a confundir felicidad con alegría y no pensar que
+            para ser feliz hay que "andar con la cara llena de risa":</p>
+
+          <p><b>- Ser feliz es tener un estado básico de conexión con la vida, sea lo que sea que nos esté tocando
+              vivir.</b> Y la felicidad es un camino que nos facilita llegar a un objetivo mayor: el del crecimiento
+            personal, la autorrealización o, como se denomina en Psicología Positiva, el "florecimiento". </p>
+
+          <p><b>- Ser alegre es tener la alegría como estado de ánimo principal.</b> Una persona puede ser alegre y no
+            ser feliz. ¿Qué procesión llevan por dentro personas de temperamento alegre, pero que están desconectadas de
+            la esencia de la vida? El dicho “Al mal tiempo, buena cara”… ¿implica que nuestra alma sea feliz cuando
+            ponemos la “buena cara”? También se puede dar que una persona sea alegre (su manera de ser), pero que esté
+            profundamente triste, viviendo en profundidad (y en superficie) su emoción de la pena. Una persona puede
+            estar muy triste y ser feliz o estar muy triste y ser alegre.</p>
+
+          <p><b>- Finalmente, estar alegre o, como decimos más frecuentemente, estar "contento", es sentir alegría en un
+              instante determinado.</b> En efecto, la alegría es una emoción; por lo tanto, momentánea por definición.
+            Cualquiera puede estar tremendamente alegre (sentirse contento) y no ser una persona alegre ni tampoco una
+            persona feliz.</p>
+
+          <hr>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="d-none d-md-block col-md-4">
+          <div class="position-absolute h-100">
+
+            <div class="sticky-top" style="padding-top: 110px;">
+              <!--Blogs -->
+              <div class="card my-4">
+                <h5 class="card-header">Más Publicaciones</h5>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+
+                      <div class="row">
+                        <a href="./blog2.html" style="text-decoration: none;">
+                          <div class="col-12">
+                            <div class="card"
+                              style="background: url('assets/img/blog\ 3\ con\ opacidad.jpg'); background-size: cover; height: 150px; background-position: center;">
+                              <div class="card-body d-flex align-items-center">
+                                <p class="text-white">La felicidad no es un objetivo, sino un camino de
+                                  vida</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+
+
+                        <a href="./blog3.html" style="text-decoration: none;">
+                          <div class="col-12">
+                            <div class="card"
+                              style="background: url('assets/img/blog2\ opacidad.png'); background-size: cover; height: 150px; background-position: center;">
+                              <div class="card-body d-flex align-items-center">
+                                <p class="text-white">Seis claves actitudinales para ser felices en el
+                                  trabajo</p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Importante-->
+              <div class="card my-4">
+                <h5 class="card-header">Importante</h5>
+                <div class="card-body">
+                  <p>Este material se puede reproducir, de manera parcial o total,
+
+                    online o en forma impresa, citando completa la fuente:
+
+                    Daniel Seisdedos Reyes, El Felicodólogo ®</p>
+
+                  <p> www.profelicidad.com
+
+                    contacto@profelicidad.com
+
+                    Peñalolén, Santiago de Chile
+
+                    56 228914706 </p>
+                </div>
+              </div>
+
+              <!-- Redes Sociales -->
+              <div class="card my-4">
+                <h5 class="card-header">Compártenos</h5>
+                <div class="card-body">
+                  <div class="row d-flex justify-content-around">
+                    <a target="_blank" href="https://www.facebook.com/zentroprofelicidad"><img src="assets/img/facebook.svg" width="40px"></a>
+                    <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/twitter.svg" width="40px"></a>
+                    <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/email.svg" width="40px"></a>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- FOOTER -->
+
+  <footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #d6ab9a; color:black">
+      <class class="row text-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 bline">
+              <h6>LINKS</h6>
+              <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+              <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+          </div>
+          <div class="col-md-2 bline social-footer">
+              <h6>SÍGUENOS</h6>
+              <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+              </p>
+              <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+              </p>
+              <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                  href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+              </p>
+          </div>
+          <div class="col-md-2 bline">
+              <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+          </div>
+          <div class="col-md-2 bline">
+              <h6>UBÍCANOS</h6>
+              <p>
+                  <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                      La Pradera 4940, Peñalolen<br> Región
+                      Metropolitana,<br> Santiago. Chile</a></p>
+          </div>
+          <div class="col-md-2">
+
+              <h6>CONTÁCTANOS</h6>
+              <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+              <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+          </div>
+          <div class="col-md-1"></div>
+      </class>
+  </footer>
+</body>
+
+<script>
+  function activate(key) {
+    let li = document.getElementsByClassName('nav-link');
+    li[0].classList.remove("nav-active");
+    li[1].classList.remove("nav-active");
+    li[2].classList.remove("nav-active");
+    li[3].classList.remove("nav-active");
+    li[4].classList.remove("nav-active");
+    li[key].classList.add("nav-active");
+  }
+
+  function myMap() {
+    const myLatLng = {
+      lat: -33.5048221,
+      lng: -70.5258002
+    };
+    var mapProp = {
+      center: new google.maps.LatLng(-33.5048221, -70.5258002),
+      zoom: 16,
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+
+      label: {
+        labelClass: "my-custom-class-for-label ",
+        // color: 'black',
+        fontWeight: 'bold',
+        fontSize: "20px ",
+        text: "Zen-Tro Profelicidad ",
+      }
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>

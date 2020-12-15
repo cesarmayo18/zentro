@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.75.1">
+  <title>Zen-Tro Pro Felicidad</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- index.css aquí-->
+  <link rel="stylesheet" href="assets/css/blog-styles.css" media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+    integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+    crossorigin="anonymous"></script>
+  <!-- estilos NICEPAGE -->
+  <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+  <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <style></style>
+  <link rel="icon" href="./assets/img/logo.png">
+  <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+</head>
+
+<body class="bg-celeste-claro">
+  <header>
+    <!-- Este es el navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo9.svg" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link nav-active" aria-current="page" href="#quienes-somos" onclick="activate(0)">¿Quiénes
+                Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicios" onclick="activate(1)">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Nuestros-Espacios" onclick="activate(2)">Nuestros Espacios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#blog" onclick="activate(3)">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contactanos" onclick="activate(4)">Contáctanos</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="d-flex">
+                <div style="position: relative;">
+                    <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                        aria-label="Buscar" autocomplete="off">
+                    <div class="p-2" id="search-options"
+                        style="background-color: white; position: absolute;width: 100%; display: none;">
+                        <ul class="list-unstyled" id="list-options">
+                          <li><a href="servicios.html">Terapia</a></li>
+                          <li><a href="servicios.html">Reiki</a></li>
+                          <li><a href="servicios.html">Consulta Psicologica</a></li>
+                          <li><a href="servicios.html">Bio-Danza</a></li>
+                          <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                          <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                          <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                          <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+            <img src="./assets/img/buscar.svg" class="buscador">
+        </button>
+    </form>
+        </div>
+    </nav>
+
+    <!-- FIN navbar -->
+  </header>
+  <a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg"
+      class=""></a>
+
+  <main>
+
+    <!-- Page Content -->
+    <div class="container mt-5">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Title -->
+          <h2 class="text-justify titulo-blog mt-4 margin-title servicios-title">Seis claves actitudinales para ser felices en el trabajo</h2>
+<br>
+          <!-- Author -->
+          <p class="lead">
+            por
+            Daniel Seisdedos
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Publicado en Julio, 2017</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="./assets/img/Elfelicidologo.png" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">
+          <p><b>Quien labora en jornada completa está más tiempo despierto en su trabajo que en su casa. ¡Ser felices en
+              el trabajo es un aspecto fundamental de ser felices en la vida! Sin embargo, muchos conciben el trabajo
+              como algo malo, desagradable o, al menos, como una obligación. Afortunadamente, existen ciertas claves
+              para revertir esta situación.</b></p>
+
+          <br>
+
+          <p><b>1) Trabajar no por obligación, sino por decisión</b></p>
+
+
+          <img class="float-left" src="assets/img/seis claves actitudoinales1.webp" style="margin-right: 15px;"
+            width="40%">
+
+
+          <p>Usualmente, las emociones asociadas al concepto de obligación (hacer las cosas en contra de nuestra
+            voluntad) son desagradables: frustración, rabia, tedio, pena, angustia… En cambio, las emociones asociadas a
+            hacer las cosas por decisión (por voluntad propia: porque queremos) son agradables o positivas: alegría,
+            ganas, entusiasmo, gozo, orgullo, amor… Las actividades no son en sí mismas una obligación o una decisión.
+            Todo está en la actitud (disposición interior) con que abordamos esa actividad. Si la efectuamos por
+            obligación (porque “tengo que”) experimentamos emociones desagradables, mientras que, por decisión (porque
+            “quiero”), sentimos emociones agradables. Esta frase facilita recordar la técnica de la decisión: “Un
+            trabajo consentido es un trabajo con sentido”.</p>
+
+          <br>
+          <br>
+
+          <p><b>2) Encontrar las propias fortalezas y talentos y trabajar según ellos</b></p>
+
+
+
+          <img class="float-right" src="assets/img/seis claves actitudoinales2.webp" style="margin-left: 15px;"
+            width="40%">
+
+
+          <p>No es lo mismo dedicarse a aquello para lo que sí somos efectivos que a labores para las cuales no lo
+            somos. Este principio tan evidente queda escondido en un sistema socioeconómico y laboral de tantas
+            presiones: la del éxito económico, la del estatus, la de los trabajos supuestamente mejores... Para soportar
+            estas presiones se requiere proactividad, que incluye la valentía de preguntarnos, desde nuestro ser más
+            profundo: ¿es esto para lo que soy realmente capaz? No queremos desmerecer la vía de desarrollar fortalezas
+            nuevas o de aprender a hacer algo en lo que somos inicialmente ignorantes o inhábiles, sino recalcar esto:
+            es más útil para una vida laboral feliz partir de la base de los talentos que forman parte esencial de
+            nuestro ser. Probablemente nuestro futuro laboral tendrá así mejores cimientos. Tal alguien se pregunte:
+            “¿Pero qué hago si yo no he encontrado un trabajo donde se apliquen mis reales fortalezas y talentos?”.
+            Nuestra respuesta es: aprovechar esa excelente escuela para aprender a aplicar las actitudes para la calidad
+            de vida: autoestima, observación-aprendizaje, autocrítica, perseverancia, paciencia, creatividad,
+            adaptación, actitud positiva y resiliencia. Puede haber mucha felicidad en agradecer ese aprendizaje.
+            Además, si las sabemos vivir, justamente las experiencias fuertes nos hacen más fuertes.</p>
+
+          <br>
+          <br>
+          <p><b>3) Trabajar por vocación</b></p>
+
+
+
+          <img class="float-left" src="assets/img/seis claves actitudoinales3.webp" style="margin-right: 15px;"
+            width="40%">
+          <p>El análisis de los talentos es racional. El análisis de nuestra vocación es emocional o espiritual. Aquello
+            por lo que realmente nos movemos los seres humanos en la vida es la pasión, que nos permite vivir
+            entusiasmados con lo que hacemos. Entusiasmo significa etimológicamente “en dios”, “rapto divino” o “poseído
+            por la divinidad”. Y esa pasión divina, en el caso del trabajo, se llama “vocación”. ¿Qué es aquello que
+            remece mi ser interior, que me hace sentir fascinación? Preguntas como estas podrían darnos la respuesta. Y,
+            si no, no importa: ¡permitámonos equivocarnos! Algunos demoran años en hallar su verdadera vocación. ¿Qué
+            tiene de malo? Toda experiencia nos servirá para aprender y para encontrarnos más con nosotros mismos.</p>
+
+          ​
+
+          <br>
+
+          <p><b>4) Disfrutar lo que hacemos: pensar positivo y hallar el lado amable</p></b>
+          <img class="float-right" src="assets/img/seis claves actitudoinales4.webp" style="margin-left: 15px;"
+            width="40%">
+
+
+
+          <p>Se le atribuye esta definición a Jean Paul Sartre: “Felicidad no es hacer lo que nos gusta, sino que nos
+            guste lo que hacemos”. Y esta otra, muy parecida, a León Tolstoi: “Felicidad no es tener lo que uno quiere,
+            sino querer lo que uno tiene”.
+
+            Aplicadas al mundo del trabajo, diremos: “La felicidad en el trabajo se logra cuando aprendemos a que nos
+            guste lo que hacemos”. El gusto es algo aprendido y subjetivo: depende de nuestras actitudes y no de las
+            circunstancias. ¿Cuántos de nosotros disfrutábamos algo que luego dejamos de disfrutar, o bien nos pasó lo
+            contrario? Depende de nuestra actitud buscarle el lado amable a las actividades.</p>
+
+
+          <p>Hay otra manera de ser feliz: hacer lo que nos gusta o tener lo que uno quiere. Tal vez la lógica básica
+            nos dice que esa forma es la ideal. Sin embargo, tiene aun más sentido la manera de Sartre y la de Tolstoi.
+            La vida es mucho más justa de lo que parece: cuando aprendemos a disfrutar lo que tenemos o lo que hacemos,
+            la vida nos premia dándonos algo que nos guste más. Pero, si vivimos despotricando por cuestiones que otros
+            valoran, la vida piensa: “¿Para qué le voy a mandar bendiciones a quien no agradece todas las que ya le he
+            enviado, como tener un trabajo?”. Aprender a que nos guste lo que hacemos es el camino para hacer lo que nos
+            gusta. ¡Creemos círculos virtuosos!</p>
+
+          <br>
+          <br>
+
+          <p><b>5) Buscar un sentido aun más trascendente en las tareas realizadas</b></p>
+          <img class="float-left" src="assets/img/seis claves actitudoinales5.webp" style="margin-right: 15px;"
+            width="40%">
+
+
+
+          <p>Un supervisor de construcción fue recorriendo la obra. Tres obreros se hallaban realizando aparentemente la
+            misma labor. Sin embargo, al preguntarles qué estaban haciendo, las respuestas fueron muy distintas. Uno,
+            con gesto amargado, dijo: “Estoy poniendo ladrillos”. Otro, más motivado: “Estoy levantando un muro”. Y el
+            tercero, lleno de gozo: “¡Estoy construyendo una catedral!”. Esta historia ilustra la importancia de
+            encontrar lo que se llama “sentido de trascendencia” a lo que estamos haciendo: ver lo que no es visible
+            ante los ojos. Probablemente todos tengamos nuestras “actividades-ladrillo”, aquellas que nos molestan o que
+            detestamos hacer. Detengámonos a pensar cuál es el muro asociado a ellas: a qué objetivo inmediato
+            contribuyen. Luego hallemos la catedral: ese sentido de trascendencia o de misión. Existen personas cuyo
+            trabajo aparente es retirar la basura o limpiar los baños, pero que son felices porque desempeñan su labor
+            llenos de sonrisas y con sentido de trascendencia.</p>
+
+          <br>
+          <br>
+          <p><b>6) Aprender a automotivarse</b></p>
+
+          <img class="float-right" src="assets/img/seis claves actitudoinales6.webp" style="margin-left: 15px;"
+            width="40%">
+
+
+
+
+          <p>Muchas personas esperan que las motiven cosas externas, como el sueldo, las perspectivas futuras o el
+            ambiente laboral. Después de haber abordado por años y con miles de trabajadores el tema de la motivación,
+            he llegado a la conclusión de que nos sirve de muy poco esperar que sean las cosas las que “nos” motiven.
+            Desde la perspectiva proactiva, no son las circunstancias las que nos motivan, sino que somos nosotros
+            quienes podemos motivarnos (o no) a partir de las circunstancias que nos toca vivir. A iguales
+            circunstancias, unos se motivan y otros nos. Desde la proactividad, toda motivación es, a fin de cuentas,
+            intrínseca, no extrínseca, porque, para que algo nos mueva, la decisión es interior: no es que algo nos
+            mueva, sino que nosotros decidimos movemos por algo. Y la automotivación es la capacidad de buscar uno mismo
+            esos motivos para la acción, sin esperar que el entorno nos ofrezca algunos.</p>
+
+
+          <p>En resumen, el trabajo, en sí mismo, es simplemente trabajo. Tal como la vida es, sencillamente, la vida.
+            ¿Pero para qué vivir y trabajar sufriendo si podemos aprender a hacerlo desde el gozo?</p>
+
+
+
+          <br>
+          <p>Nota</p>
+
+          <p>Este artículo fue publicado originalmente en "Revista Bienestar y Salud" en mayo de 2014 sin la palabra
+            "actitudinales" en el título. Ahora se la incluye para permanecer abiertos a otras perspectivas para bordar
+            el tema.</p>
+            <hr>
+            <br>
+
+
+        </div>
+
+           <!-- Sidebar Widgets Column -->
+           <div class="d-none d-md-block  col-md-4">
+            <div class="position-absolute h-100">
+  
+              <div class="sticky-top" style="padding-top: 110px;">
+                <!--Blogs -->
+                <div class="card my-4">
+                  <h5 class="card-header">Más Publicaciones</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+  
+                        <div class="row">
+                          <a href="./blog1.html" style="text-decoration: none;">
+                            <div class="col-12">
+                              <div class="card"
+                                style="background: url('assets/img/blog1opacidad.png'); background-size: cover; height: 150px; background-position: center;">
+                                <div class="card-body d-flex align-items-center">
+                                  <p class="text-white">Distinciones básicas de la Felicidología</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+  
+  
+                          <a href="./blog2.html" style="text-decoration: none;">
+                            <div class="col-12">
+                              <div class="card"
+                                style="background: url('assets/img/blog\ 3\ con\ opacidad.jpg'); background-size: cover; height: 150px; background-position: center;">
+                                <div class="card-body d-flex align-items-center">
+                                  <p class="text-white">La felicidad no es un objetivo, sino un camino de vida</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Importante-->
+                <div class="card my-4">
+                  <h5 class="card-header">Importante</h5>
+                  <div class="card-body">
+                    <p>Este material se puede reproducir, de manera parcial o total,
+  
+                      online o en forma impresa, citando completa la fuente:
+  
+                      Daniel Seisdedos Reyes, El Felicodólogo ®</p>
+  
+                    <p> www.profelicidad.com
+  
+                      contacto@profelicidad.com
+  
+                      Peñalolén, Santiago de Chile
+  
+                      56 228914706 </p>
+                  </div>
+                </div>
+  
+                <!-- Redes Sociales -->
+                <div class="card my-4">
+                  <h5 class="card-header">Compártenos</h5>
+                  <div class="card-body">
+                    <div class="row d-flex justify-content-around">
+                      <a target="_blank" href="https://www.facebook.com/zentroprofelicidad"><img src="assets/img/facebook.svg" width="40px"></a>
+                      <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/twitter.svg" width="40px"></a>
+                      <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/email.svg" width="40px"></a>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+  </main>
+  <!-- FOOTER -->
+
+  <footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #d6ab9a; color:black">
+      <class class="row text-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 bline">
+              <h6>LINKS</h6>
+              <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+              <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+          </div>
+          <div class="col-md-2 bline social-footer">
+              <h6>SÍGUENOS</h6>
+              <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+              </p>
+              <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+              </p>
+              <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                  href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+              </p>
+          </div>
+          <div class="col-md-2 bline">
+              <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+          </div>
+          <div class="col-md-2 bline">
+              <h6>UBÍCANOS</h6>
+              <p>
+                  <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                      La Pradera 4940, Peñalolen<br> Región
+                      Metropolitana,<br> Santiago. Chile</a></p>
+          </div>
+          <div class="col-md-2">
+
+              <h6>CONTÁCTANOS</h6>
+              <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+              <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+          </div>
+          <div class="col-md-1"></div>
+      </class>
+  </footer>
+</body>
+
+<script>
+  function activate(key) {
+    let li = document.getElementsByClassName('nav-link');
+    li[0].classList.remove("nav-active");
+    li[1].classList.remove("nav-active");
+    li[2].classList.remove("nav-active");
+    li[3].classList.remove("nav-active");
+    li[4].classList.remove("nav-active");
+    li[key].classList.add("nav-active");
+  }
+
+  function myMap() {
+    const myLatLng = {
+      lat: -33.5048221,
+      lng: -70.5258002
+    };
+    var mapProp = {
+      center: new google.maps.LatLng(-33.5048221, -70.5258002),
+      zoom: 16,
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+
+      label: {
+        labelClass: "my-custom-class-for-label ",
+        // color: 'black',
+        fontWeight: 'bold',
+        fontSize: "20px ",
+        text: "Zen-Tro Profelicidad ",
+      }
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>

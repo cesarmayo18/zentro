@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.75.1">
+    <title>Zen-Tro Pro Felicidad</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!-- index.css aquí-->
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+        integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+        crossorigin="anonymous"></script>
+    <!-- estilos NICEPAGE -->
+    <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+    <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <style></style>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #FFFFFF;">
+    <header>
+        <!-- Este es el navbar -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo9.svg" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-active" aria-current="page" href="#quienes-somos"
+                                onclick="activate(0)">¿Quiénes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicios" onclick="activate(1)">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Nuestros-Espacios" onclick="activate(2)">Nuestros
+                                Espacios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#blog" onclick="activate(3)">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contactanos" onclick="activate(4)">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="d-flex">
+                            <div style="position: relative;">
+                                <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                                    aria-label="Buscar" autocomplete="off">
+                                <div class="p-2" id="search-options"
+                                    style="background-color: white; position: absolute;width: 100%; display: none;">
+                                    <ul class="list-unstyled" id="list-options">
+                                        <li><a href="servicios.html">Terapia</a></li>
+                                        <li><a href="servicios.html">Reiki</a></li>
+                                        <li><a href="servicios.html">Consulta Psicologica</a></li>
+                                        <li><a href="servicios.html">Bio-Danza</a></li>
+                                        <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                                        <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                                        <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                                        <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+                        <img src="./assets/img/buscar.svg" class="buscador">
+                    </button>
+                </form>
+                </div>
+        </nav>
+
+        <!-- FIN navbar -->
+    </header>
+    <a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg"
+            class=""></a>
+
+    <main class="mb-5" style="margin-top: 200px;">
+
+        <div class="container marketing">
+            <h2 class="text-center mt-10 margin-title servicios-title">Presencia en Medios</h2>
+            <br>
+            <br>
+
+            <!-- START THE FEATURETTES -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="mb-5">El ZEN-TRO Profelicidad ha concitado
+                        el interés de medios de comunicación </h2>
+                    <br>
+                    <p class="text-justify">
+                        El domingo 26 de mayo, en el programa de entrevistas más antiguo de la televisión
+                        chilena, "Cara
+                        a cara", Tomás Cox lo entrevistó por casi una hora. Hablaron sobre la felicidad en
+                        Chile, los
+                        verbos de la felicidad y otros temas afines.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/aPiBGCyhZ0g?rel=0" width="100%" height="350px"
+                            title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+
+                    <p class="text-justify">En agosto de 2018, el conductor Nicolás Larraín, del programa
+                        "Ni uno afuera" (canal
+                        multimedia
+                        New
+                        Radio Chile), tuvo a bien invitarlo también. Nicolás se sorprendió de que algunos de
+                        nuestros
+                        profesionales lleven más de 20 años dedicados al estudio y la enseñanza de la
+                        felicidad.</p>
+
+                    ​<p class="text-justify">La conversación versó sobre los cinco verbos claves para
+                        hacerse feliz: agradecer,
+                        aceptar,
+                        soltar,
+                        cambiar y gozar. Aquí tienes acceso a la distendida conversación con Nicolás
+                        Larraín.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/v6o4QG2MBBY?rel=0" width="100%" height="350px"
+                            title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+
+                    <p class="text-justify">En junio de 2018 nos invitaron a una dinámica y entretenida
+                        entrevista con Daniel
+                        Fuenzaliza,
+                        conductor de "Me late". El programa se trasmitió por la señal de televisión abierta
+                        de
+                        Universidad
+                        Católica de Valparaíso. Aquí tienes acceso a la entrevista completa con Daniel
+                        Fuenzalida.</p>
+
+                    <p class="text-justify">El tema central fue la Felicidología, una disciplina que estudia
+                        la felicidad con dos
+                        objetivos
+                        principales:
+                    <p class="text-justify">1) Comprender la felicidad de una manera que trascienda las
+                        épocas y las distintas
+                        definiciones
+                        que existen sobre ella </p>
+                    <p class="text-justify"> 2) Detectar maneras concretas para que las personas se hagan
+                        más felices en el día a
+                        día.</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Ffl7X1VF5iE?rel=0" width="100%" height="350px"
+                            title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #dbc0b6; color:black">
+        <class class="row text-center">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 bline">
+                <h6>LINKS</h6>
+                <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+                <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+            </div>
+            <div class="col-md-2 bline social-footer">
+                <h6>SÍGUENOS</h6>
+                <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+                </p>
+                <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+                </p>
+                <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                    href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+                </p>
+            </div>
+            <div class="col-md-2 bline">
+                <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+            </div>
+            <div class="col-md-2 bline">
+                <h6>UBÍCANOS</h6>
+                <p>
+                    <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                        La Pradera 4940, Peñalolen<br> Región
+                        Metropolitana,<br> Santiago. Chile</a></p>
+            </div>
+            <div class="col-md-2">
+
+                <h6>CONTÁCTANOS</h6>
+                <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+                <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+            </div>
+            <div class="col-md-1"></div>
+        </class>
+    </footer>
+</body>
+
+<script>
+    function activate(key) {
+        let li = document.getElementsByClassName('nav-link');
+        li[0].classList.remove("nav-active");
+        li[1].classList.remove("nav-active");
+        li[2].classList.remove("nav-active");
+        li[3].classList.remove("nav-active");
+        li[4].classList.remove("nav-active");
+        li[key].classList.add("nav-active");
+    }
+
+    function myMap() {
+        const myLatLng = {
+            lat: -33.5048221,
+            lng: -70.5258002
+        };
+        var mapProp = {
+            center: new google.maps.LatLng(-33.5048221, -70.5258002),
+            zoom: 16,
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+
+            label: {
+                labelClass: "my-custom-class-for-label ",
+                // color: 'black',
+                fontWeight: 'bold',
+                fontSize: "20px ",
+                text: "Zen-Tro Profelicidad ",
+            }
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>

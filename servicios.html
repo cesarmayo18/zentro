@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.75.1">
+    <title>Zen-Tro Pro Felicidad</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!-- index.css aquí-->
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+            integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+            crossorigin="anonymous"></script>
+    <!-- estilos NICEPAGE -->
+    <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+    <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <style></style>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+</head>
+
+<body class="body">
+<header>
+    <!-- Este es el navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo20.svg" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#quienes-somos" onclick="activate(0)">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="index.html#servicios" onclick="activate(1)">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Nuestros-Espacios" onclick="activate(2)">Arriendo de Espacios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog" onclick="activate(3)">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contactanos" onclick="activate(4)">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="d-flex">
+                        <div style="position: relative;">
+                            <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                                aria-label="Buscar" autocomplete="off">
+                            <div class="p-2" id="search-options"
+                                style="background-color: white; position: absolute;width: 100%; display: none;">
+                                <ul class="list-unstyled" id="list-options">
+                                    <li><a href="servicios.html">Terapia</a></li>
+                                    <li><a href="servicios.html">Reiki</a></li>
+                                    <li><a href="servicios.html">Consulta Psicologica</a></li>
+                                    <li><a href="servicios.html">Bio-Danza</a></li>
+                                    <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                                    <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                                    <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                                    <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+                    <img src="./assets/img/buscar.svg" class="buscador">
+                </button>
+            </form>
+            </div>
+    </nav>
+
+    <!-- FIN navbar -->
+</header>
+
+<a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg" class=""></a>
+
+<div class="main-menu">
+    <div class="btn-group">
+        <button type="button" class="btn btn-serv" onclick="handleContent(1)">Sanar con terapias</button>
+        <button type="button" class="btn btn-serv dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#Consultas" onclick="handleContent(1)">Consultas Psicológicas</a>
+            </li>
+            <li><a href="#medicina" onclick="handleContent(1)">Medicina</a>
+            </li>
+            <li><a href="#terapia" onclick="handleContent(1)">Terapias complementarias</a>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-serv" onclick="handleContent(2)">Crecer con talleres y grupos de práctica</button>
+        <button type="button" class="btn btn-serv dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#charlas" onclick="handleContent(2)">Charlas</a>
+            </li>
+            <li><a href="#grupos" onclick="handleContent(2)">Grupo de práctica</a>
+            </li>
+            <li><a href="#talleres" onclick="handleContent(2)">Taller</a>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-serv" onclick="handleContent(3)">Celebrar con rituales</button>
+        <button type="button" class="btn btn-serv dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#rituales" onclick="handleContent(3)">Rituales</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="" id="sanar">
+        <h2 class="main-center main-title tith2">·    S A N A R    ·</h2>
+        <h5 class="main-center h5">Mediante terapias, mantienes un estado
+            de buena salud y bienestar integral</h5>
+        <br>
+        <h2 class="text-center mt-10 margin-title servicios-title">Consultas Psicológicas</h2>
+        <br>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal19"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/adultos.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal19">
+                    <p class="card-text title-center">Adultos</p>
+                </div>
+                <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel19">Adultos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/adultos.jpeg">
+                                <p>¿Quieres superar ansiedad, miedo o angustia? ¿O quieres atender tu
+                                    bienestar psicoemocional en otro aspecto? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal20"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/familiar.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal20">
+                    <p class="card-text title-center">Familiar</p>
+                </div>
+                <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel20">Familiar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/familiar.jpeg">
+                                <p>¿Te gustaría mejorar el bienestar psicoemocional de tu familia como tal? ¿O
+                                    las relaciones familiares? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal21"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/infantil.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal21">
+                    <p class="card-text title-center">Infanto-juvenil</p>
+                </div>
+                <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel21">Infanto-juvenil</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/infantil.jpeg">
+                                <p>¿Tus hijos o nietos están con problemas que afectan su felicidad o su
+                                    bienestar? ¿O quieres asegurarte de aplicar las habilidades parentales adecuadas en su
+                                    formación? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal22"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/parejas.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal22">
+                    <p class="card-text title-center"  id="medicina">Parejas</p>
+                </div>
+                <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel22">Parejas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/parejas.jpeg">
+                                <p>¿Ha sido especialmente desafiante tu relación de pareja el último tiempo? ¿O
+                                    tienen una relación sana pero desean potenciarla? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal23"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/separados.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal23">
+                    <p class="card-text title-center">Separadas</p>
+                </div>
+                <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel23">Separadas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/separados.jpeg">
+                                <p>¿Estás en proceso de separación o ya te separaste? ¿Y necesitas apoyo
+                                    para abordar esta situación o tu vida de ahora en adelante? Pide tu hora (presencial u
+                                    online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-10 margin-title servicios-title">Medicinas</h2>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal24"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/mintegrativa.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal24">
+                    <p class="card-text title-center title-center">Medicina integrativa de adultos y niños</p>
+                </div>
+                <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel24">Medicina integrativa de adultos y niños</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/mintegrativa.jpeg">
+                                <p>¿Tú o alguien en tu familia tienes dolencias o
+                                    enfermedades? ¿Y prefieres un enfoque holístico, más allá de la medicina alópata o
+                                    tradicional? Pide tu hora (sólo online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal25"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/kine.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal25">
+                    <p class="card-text title-center">Kinesiología integral (con bioenergética y biomagnetismo)</p>
+                </div>
+                <div class="modal fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel25">Kinesiología integral (con bioenergética y biomagnetismo)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/kine.jpeg">
+                                <p>¿Tú o alguien en tu familia tienes dolencias o
+                                    enfermedades? ¿Y prefieres un enfoque holístico, más allá de la medicina alópata o
+                                    tradicional? Pide tu hora (sólo online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal26"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/mesoterapia.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal26">
+                    <p class="card-text title-center" id="terapia">Masoterapia integral</p>
+                </div>
+                <div class="modal fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel26">Masoterapia integral</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/mesoterapia.jpeg">
+                                <p>¿Tienes molestias, dolores o complicaciones posturales? ¿O
+                                    estás tensa o con distrés (estrés negativo)? ¿Y estás dispuesta a soltar o al menos
+                                    expresar emociones o creencias asociadas? Pide tu hora (sólo presencial).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-10 margin-title servicios-title">Terapias complementarias</h2>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal27"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/runas.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal27">
+                    <p class="card-text title-center">Runas</p>
+                </div>
+                <div class="modal fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel27">Runas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/runas.jpeg">
+                                <p>¿Tienes preguntas importantes que no has podido resolver? ¿O posibles
+                                    decisiones que te tienen estancada? ¿Crees en los oráculos divinos o en la voz de tu
+                                    propio corazón? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal28"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/tarot.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal28">
+                    <p class="card-text title-center">Tarot Terapéutico</p>
+                </div>
+                <div class="modal fade" id="exampleModal28" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel28">Tarot Terapéutico</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/tarot.jpeg">
+                                <p>¿Quieres potenciar tu autoconocimiento? ¿O mejorar tu relación
+                                    con los demás o la vida? ¿Y crees que unas cartas te puedan dar luces para ver lo que
+                                    no estás viendo? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal29"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/chacras.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal29">
+                    <p class="card-text title-center">Alineación de chacras con Gyoshi Ho (reiki de la mirada), Reiki Tao y péndulo de
+                sanación</p>
+                </div>
+                <div class="modal fade" id="exampleModal29" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel29">Alineación de chacras con Gyoshi Ho (reiki de la mirada), Reiki Tao y péndulo de
+                sanación</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/chacras.jpeg">
+                                <p>¿Te has sentido cansada, con menos energía, o con algunos dolores
+                                    corporales o emocionales? ¿Quieres sentirte con mayor equilibrio físico, emocional y
+                                    energético? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal30"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/reiki.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal30">
+                    <p class="card-text title-center">Reiki del sonido</p>
+                </div>
+                <div class="modal fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel30">Reiki del sonido</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/reiki.jpeg">
+                                <p>¿Te gustaría sentirte mejor, relajada, equilibrada, con energía
+                                    renovada? ¿Quieres experimentar una forma de sanación energética que incluye
+                                    manos, voz y colores? Pide tu hora (sólo presencial).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal31"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/flores.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal31">
+                    <p class="card-text title-center">Flores de Bach</p>
+                </div>
+                <div class="modal fade" id="exampleModal31" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel31">Flores de Bach</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/flores.jpeg">
+                                <p>¿Tú o tus hijos están con problemas de comportamiento? ¿O sufren
+                                    alteraciones del ánimo, del sueño o estrés? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal32"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/felici.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal32">
+                    <p class="card-text title-center">Felicidología ©</p>
+                </div>
+                <div class="modal fade" id="exampleModal32" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel32">Felicidología ©</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/felici.jpeg">
+                                <p>¿Quieres ser más feliz de manera simple y efectiva? ¿Y estás dispuesta
+                                    de verdad a hacer ciertos cambios para eso? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal33"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/sueno.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal33">
+                    <p class="card-text title-center">Análisis de sueños</p>
+                </div>
+                <div class="modal fade" id="exampleModal33" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel33">Análisis de sueños</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/sueno.jpeg">
+                                <p> ¿Hay sueños que te están quitando el sueño? ¿O quieres entender
+                                    los mensajes de tu inconsciente para usarlos a tu favor? Pide tu hora (presencial u
+                                    online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal34"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/aura.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal34">
+                    <p class="card-text title-center">Limpieza de aura y chakras con Sanación Luz Dorada y péndulo de sanación</p>
+                </div>
+                <div class="modal fade" id="exampleModal34" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel34">Limpieza de aura y chakras con Sanación Luz Dorada y péndulo de sanación</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/aura.jpeg">
+                                <p> sentido molestias, bloqueos o cansancio en tu cuerpo físico o emocional? ¿Tienes la
+                                    sensación de que tiene que ver también con tu cuerpo en energético? Pide tu hora
+                                    (presencial u online)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal35"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/hoopono.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal35">
+                    <p class="card-text title-center">Ho’oponopono vibracional</p>
+                </div>
+                <div class="modal fade" id="exampleModal35" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel35">Ho’oponopono vibracional</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/hoopono.jpeg">
+                                <p> ¿Te sientes en conflicto, triste o molesta en tus relaciones
+                                    con algunas personas? ¿Estás percibiendo a algunas como tóxicas y no nutritivas? ¿Y
+                                    estás dispuesta a hacer tú misma un trabajo desde tu voz divina interior? Pide tu hora
+                                    (presencial u online)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal36"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/registros.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal36">
+                    <p class="card-text title-center">Registros akáshicos</p>
+                </div>
+                <div class="modal fade" id="exampleModal36" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel36">Registros akáshicos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/registros.jpeg">
+                                <p> ¿Quieres entender mejor el camino de tu alma en esta vida y
+                                    relacionarlo con vidas pasadas? ¿Deseas recibir mensajes de los maestros de luz? Pide
+                                    tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal37"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/tecnicas.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal37">
+                    <p class="card-text title-center">Técnicas de liberación emocional (Tapping)</p>
+                </div>
+                <div class="modal fade" id="exampleModal37" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel37">Técnicas de liberación emocional (Tapping)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/tecnicas.jpeg">
+                                <p> ¿Quieres superar hábitos que te
+                                    complican? ¿O creencias o emociones que te están limitando? Pide tu hora (presencial
+                                    u online)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal39"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/emocional.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal39">
+                    <p class="card-text title-center">Biodescodificación emocional</p>
+                </div>
+                <div class="modal fade" id="exampleModal39" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel39">Biodescodificación emocional</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/emocional.jpeg">
+                                <p> ¿Te gustaría entender el origen metafísico de dolencias
+                                    o enfermedades? ¿Y mirar su significado emocional, para buscar a partir de allí la
+                                    forma de sanar? Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal66"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/arte.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal36">
+                    <p class="card-text title-center">Arteterapia</p>
+                </div>
+                <div class="modal fade" id="exampleModal66" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel66">Arteterapia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/arte.jpeg">
+                                <p>¿Qué tal mirarte de una manera distinta y descubrir otras facetas de tu ser?<br>
+                                    ¿Qué te parece expresar creativamente lo que tu inconsciente tiene para mostrarte?<br>
+                                    Pide tu hora (presencial u online).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal67"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/madre.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal67">
+                    <p class="card-text title-center">Madre Nutricia</p>
+                </div>
+                <div class="modal fade" id="exampleModal67" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel67">Madre Nutricia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/madre.jpeg">
+                                <p> ¿Quieres aprender a nutrir no sólo tu cuerpo sino también tu espíritu?<br>
+                                    ¿Y te imaginas comiendo rico pero, además, saludable? Pide tu hora (presencial u online)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="crecer d-none" id="crecer">
+        <h2 class="main-center main-title tith2">·    C R E C E R   ·</h2>
+        <h5 class="main-center h5">Participando en talleres y grupos de práctica,
+            potencias tu poder interior y floreces</h5>
+        <br>
+        <h2 class="text-center mt-10 margin-title servicios-title ">Charlas</h2>
+        <br>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal50"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/video.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal50">
+                    <p class="card-text title-center">Charla virtual en video (asincrónica): ¿Cómo vivir sin culpas?</p>
+                </div>
+                <div class="modal fade" id="exampleModal50" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel50">¿Cómo vivir sin culpas?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/video.jpeg">
+                                <p>45 minutos, incluyendo diapositivas en pdf y ejercicios de
+                                    autoconocimiento. Por Viviana Alvarado, experta que te habla directamente a ti.<br>
+                                    ¿Sientes o has sentido culpas y te gustaría dejarlas atrás? Adquiere esta charla virtual.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal51"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/charlafil.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal51">
+                    <p class="card-text title-center">Charla virtual en video (asincrónica) Felicidología</p>
+                </div>
+                <div class="modal fade" id="exampleModal51" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel51">Charla virtual en video (asincrónica) Felicidología</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/charlafil.jpeg">
+                                <p>¿Cómo hacernos más felices incluso en tiempos de crisis?: una hora,
+                                    incluyendo diapositivas en pdf. Por Daniel Seisdedos, El Felicidólogo ®, quien te habla
+                                    directamente a ti. <br>¿Quieres entender la verdadera esencia de la felicidad?<br> ¿Y conocer
+                                    sus claves según los principales maestros de la historia?<br> ¿Por ejemplo, los 6 verbos
+                                    mágicos de la felicidad? Adquiere esta charla virtual.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal52"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/crisis.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal52">
+                    <p class="card-text title-center" id="grupos">Master Class virtual en video (asincrónica): 6 claves para estar bien en tiempo de crisis</p>
+                </div>
+                <div class="modal fade" id="exampleModal52" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel52">Master Class virtual en video (asincrónica): 6 claves para estar bien en tiempo de crisis</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/crisis.jpeg">
+                                <p>2 horas, incluyendo diapositivas en pdf y
+                                    ejercicios de análisis o práctica. Por Daniel Seisdedos, El Felicidólogo ®. <br>Grabación en
+                                    ZOOM con participantes reales. Cuando vivas la clase, podrás detener el video si
+                                    requieres más tiempo para tus ejercicios.<br> ¿Confías en que sí es posible estar bien aun
+                                    en las crisis? Adquiere esta Master Class.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-10 margin-title servicios-title ">Grupo de práctica</h2>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal53"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/g1.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal53">
+                    <p class="card-text title-center" id="talleres">Grupo de práctica de Chi Kung combinado con ejercicios terapéuticos chinos (online
+                        en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal53" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel53">Grupo de práctica de Chi Kung combinado con ejercicios terapéuticos chinos (online
+                                    en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/g1.jpeg">
+                                <p>4Dos sesiones por semana: una hora por sesión. Por Carolina Bascuñán, kinesióloga
+                                    integral, profesora de Chi Kung, terapeuta de biomagnetismo y bioenergética. También
+                                    da sesiones de kinesiología y estas terapias en el ZEN-TRO y a domicilio.<br> ¿Quieres
+                                    incrementar simultáneamente tu bienestar físico, emocional, mental, espiritual y
+                                    energético?<br> ¿O mejorar específicamente tu inmunidad, aliviar dolores y reducir el
+                                    estrés?<br> Inscríbete gratis en tu clase de prueba de Chi Kung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-10 margin-title servicios-title ">Talleres</h2>
+
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal54"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/feli.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal54">
+                    <p class="card-text title-center">Taller de Introducción a la felicidad personal y laboral (presencial y online en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal54" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel54">Taller de Introducción a la felicidad personal y laboral (presencial y online en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/feli.jpeg">
+                                <p>¿Quieres comprender mejor qué es la felicidad y cómo se logra?<br> ¿Quieres ver
+                                    qué te está dificultando ser más feliz y superarlo fácilmente?<br> ¿Quieres darle un
+                                    sentido o propósito más claro o poderoso a tu vida? Inscríbete en este taller.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal55"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/seryo.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal55">
+                    <p class="card-text title-center">Taller Hoy elijo ser… ¡yo misma! (presencial y online en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal55" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel55">Taller Hoy elijo ser… ¡yo misma! (presencial y online en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/seryo.jpeg">
+                                <p>¿Te diste cuenta
+                                    de lo importante que eres y decidiste quererte más y cuidarte más?<br> ¿Te gustaría
+                                    aprender ejercicios simples para tu bienestar o vivir sin estrés ni angustia? <br>¿Quieres
+                                    superar creencias o emociones que te están limitando?<br> ¿Y aprender a poner límites a
+                                    quienes dificultan tu desarrollo? Inscríbete en este intenso taller.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal56"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/manada.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal56">
+                    <p class="card-text title-center">Taller Vivir en manada, relaciones familiares nutritivas (presencial y online en tiempo
+                        real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal56" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel56">Taller Vivir en manada, relaciones familiares nutritivas (presencial y online en tiempo
+                                    real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/manada.jpeg">
+                                <p>¿Se llevan bien pero quieren llevarse aun mejor en la familia?<br> ¿O han tenidos
+                                    roces o desencuentros? Y además, ¿quieren relacionarse sin sufrir por las diferencias,
+                                    sino pasándolo bien pese a ellas? <br>Inscríbanse en este entretenido y útil taller para la
+                                    unidad familiar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal57"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/doblefelices.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal57">
+                    <p class="card-text title-center">Taller El doble de felices, relación nutritiva en la pareja (presencial y online en
+                        tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal57" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel57">Taller El doble de felices, relación nutritiva en la pareja (presencial y online en
+                                    tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/doblefelices.jpeg">
+                                <p>¿Quieren gestionar mejor sus diferencias?<br> ¿O dar más energía a sus
+                                    sueños y proyectos?<br> ¿Quieren fortalecer el amor más allá de los hijos, si los tienen?<br>
+                                    Inscríbanse en este maravilloso taller para la unidad de la pareja.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal58"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/escuela.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal58">
+                    <p class="card-text title-center">Escuela de verano con sentido para niños (presencial y online en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal58" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel58">Escuela de verano con sentido para niños (presencial y online en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/escuela.jpeg">
+                                <p>¿Quieres que tus niños se entretengan y crezcan en su formación valórica. Durante
+                                    enero, disponemos para ellos de distintos talleres con profesionales expertos en los
+                                    temas y en trabajo con niños:<br>
+                                <li> Manos creadoras: para fortalecer su autoconocimiento mediante ejercicios de
+                                    arteterapia.</li>
+                                <li> Super-eco-niños: para ejercitar su conexión con la naturaleza y el cuidado del
+                                    planeta.</li>
+                                <li>Cocina Sa-Sá (saludable y sabrosa): para cocinar y comer usando los cinco
+                                    sentidos (atención plena) y relacionarse positivamente con los alimentos.</li>
+                                <li>Mi voz, mi poder: para potenciar su autoestima jugando con la voz y su
+                                    seguridad personal en disertaciones.</li>
+                                <li> Meditación y bienestar: para autoconocerse y aprender técnicas de bienestar
+                                    integral (físico, emocional, mental, espiritual y energético).</li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="crecer d-none" id="celebrar">
+        <h2 class="main-center main-title tith2">·    C E L E B R A R   ·</h2>
+        <h5 class="main-center h5">Siendo parte de rituales y celebraciones,
+            compartes con otros y generas abundancia</h5>
+        <br>
+        <h2 class="text-center mt-10 margin-title servicios-title ">Rituales</h2>
+        <br>
+        <div class="row center-tar">
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal60"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/bendicion.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal60">
+                    <p class="card-text title-center">Bendición de útero en luna llena (presencial y online en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal60" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel60">Bendición de útero en luna llena (presencial y online en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/bendicion.jpeg">
+                                <p>¿Quieres dejar
+                                    atrás creencias que te limitan? <br>¿O te gustaría conectarte de manera positiva con tus
+                                    ancestros y ancestras?<br> ¿O sentirte parte de la tribu de mujeres con vivencias parecidas
+                                    a las tuyas? Realizamos este ritual de mujeres la mayoría de las fechas de luna llena.
+                                    Inscríbete en el próximo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal61"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/solsticio.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal61">
+                    <p class="card-text title-center">Solsticios y equinoccios (presencial y online en tiempo real):</p>
+                </div>
+                <div class="modal fade" id="exampleModal61" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel61">Solsticios y equinoccios (presencial y online en tiempo real):</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/solsticio.jpeg">
+                                <p>¿Te gustaría conectarte
+                                    más con los ciclos de la Madre Tierra?<br> ¿O celebrar con otros estar vivos y seguir
+                                    adelante en abundancia? <br>¿Quieres dejar atrás lo que no te sirve? <br>Celebramos estos
+                                    momentos en cada cambio de estación contigo y tu familia. Inscríbete en el próximo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 card shadow-sm">
+                <div data-toggle="modal" data-target="#exampleModal63"
+                     style="height: 180px; width: 100%; background-image: url('assets/img/abundancia.jpeg'); background-position: center; background-size: cover;"></div>
+                <div class="card-body" data-toggle="modal" data-target="#exampleModal63">
+                    <p class="card-text title-center">Rituales de sanación y abundancia (presencial y online en tiempo real)</p>
+                </div>
+                <div class="modal fade" id="exampleModal63" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel63">Rituales de sanación y abundancia (presencial y online en tiempo real)</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="spacio-image" src="assets/img/abundancia.jpeg">
+                                <p>¿Quieres
+                                    sentirte bien y convocar mayor salud, bienestar y abundancia para ti y los tuyos?<br> Los
+                                    hacemos sin fecha determinada, simplemente cuando varias personas lo desean.
+                                    Puede ser para fin de año u otras ocasiones. Inscríbete para participar en nuestros
+                                    rituales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #d6ab9a; color:black">
+    <class class="row text-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 bline">
+            <h6>LINKS</h6>
+            <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+            <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+        </div>
+        <div class="col-md-2 bline social-footer">
+            <h6>SÍGUENOS</h6>
+            <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+            </p>
+            <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+            </p>
+            <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+            </p>
+        </div>
+        <div class="col-md-2 bline">
+            <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+        </div>
+        <div class="col-md-2 bline">
+            <h6>UBÍCANOS</h6>
+            <p>
+                <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                    La Pradera 4940, Peñalolen<br> Región
+                    Metropolitana,<br> Santiago. Chile</a></p>
+        </div>
+        <div class="col-md-2">
+
+            <h6>CONTÁCTANOS</h6>
+            <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+            <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+        </div>
+        <div class="col-md-1"></div>
+    </class>
+</footer>
+
+<script>
+    function goTo(key, item){
+        handleContent(key);
+    }
+
+    function handleContent(key){
+        let con = document.getElementById('sanar');
+        let cre = document.getElementById('crecer');
+        let cel = document.getElementById('celebrar');
+        switch (key) {
+            case 1:
+                con.classList.remove("d-none");
+                cre.classList.add("d-none");
+                cel.classList.add("d-none");
+                break;
+            case 2:
+                cre.classList.remove("d-none");
+                con.classList.add("d-none");
+                cel.classList.add("d-none");
+                break;
+            case 3:
+                cel.classList.remove("d-none");
+                con.classList.add("d-none");
+                cre.classList.add("d-none");
+                break;
+        }
+    }
+
+    function activate(key){
+        let li = document.getElementsByClassName('nav-link');
+        li[0].classList.remove("nav-active");
+        li[1].classList.remove("nav-active");
+        li[2].classList.remove("nav-active");
+        li[3].classList.remove("nav-active");
+        li[4].classList.remove("nav-active");
+        li[key].classList.add("nav-active");
+    }
+
+    function myMap() {
+        const myLatLng = {
+            lat: -33.5048221,
+            lng: -70.5258002
+        };
+        var mapProp = {
+            center: new google.maps.LatLng(-33.5048221, -70.5258002),
+            zoom: 16,
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+
+            label: {
+                labelClass: "my-custom-class-for-label ",
+                // color: 'black',
+                fontWeight: 'bold',
+                fontSize: "20px ",
+                text: "Zen-Tro Profelicidad ",
+            }
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>

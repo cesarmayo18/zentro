@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.75.1">
+  <title>Zen-Tro Pro Felicidad</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- index.css aquí-->
+  <link rel="stylesheet" href="assets/css/blog-styles.css" media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+    integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+    crossorigin="anonymous"></script>
+  <!-- estilos NICEPAGE -->
+  <link rel="stylesheet" href="assets/css/Página-1.css" media="screen">
+
+  <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <style></style>
+  <link rel="icon" href="./assets/img/logo.png">
+  <link href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+</head>
+
+<body class="bg-celeste-claro">
+  <header>
+    <!-- Este es el navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo9.svg" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link nav-active" aria-current="page" href="#quienes-somos" onclick="activate(0)">¿Quiénes
+                Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicios" onclick="activate(1)">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Nuestros-Espacios" onclick="activate(2)">Nuestros Espacios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#blog" onclick="activate(3)">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contactanos" onclick="activate(4)">Contáctanos</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="d-flex">
+                <div style="position: relative;">
+                    <input class="form-control mr-2" id="search-input" type="search" placeholder="Buscar"
+                        aria-label="Buscar" autocomplete="off">
+                    <div class="p-2" id="search-options"
+                        style="background-color: white; position: absolute;width: 100%; display: none;">
+                        <ul class="list-unstyled" id="list-options">
+                          <li><a href="servicios.html">Terapia</a></li>
+                          <li><a href="servicios.html">Reiki</a></li>
+                          <li><a href="servicios.html">Consulta Psicologica</a></li>
+                          <li><a href="servicios.html">Bio-Danza</a></li>
+                          <li><a href="blog1.html">Distinciones básicas de la Felicidología</a></li>
+                          <li><a href="blog2.html">La felicidad no es un objetivo, sino un camino de vida</a></li>
+                          <li><a href="blog3.html">Seis claves actitudinales para ser felices en el trabajo</a></li>
+                          <li><a href="Copia de presencia en medios.html">Presencia en Medios</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0 btn-buscador" type="submit">
+            <img src="./assets/img/buscar.svg" class="buscador">
+        </button>
+    </form>
+        </div>
+    </nav>
+
+    <!-- FIN navbar -->
+  </header>
+  <a href="https://wa.me/56961881922" class="whatsapp-link" target="_blank"> <img src="./assets/img/whatsapp.svg"
+      class=""></a>
+  <main>
+    <!-- Page Content -->
+    <div class="container mt-5">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Title -->
+          <h2 class="text-justify titulo-blog mt-4 margin-title servicios-title">La felicidad no es un objetivo, sino un camino de vida</h2>
+<br>
+          <!-- Author -->
+          <p class="lead">
+            por
+            Daniel Seisdedos
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Publicado en Julio, 2017</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="./assets/img/Elfelicidologo.png" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">
+
+          <p> <b>La cultura occidental se equivocó al endiosar la idea de Aristóteles sobre que la felicidad es fin
+              supremo o gran objetivo de la vida. La felicidad es un camino o medio. Lleva al éxito bien entendido. Pero
+              este tampoco es el objetivo. El objetivo es la autorrealización.</b></p>
+
+
+
+          <p>Tras 20 años dedicados a lo que en 2011 terminé bautizando “Felicidología”, en marzo de 2017 lo formalicé
+            registrando el concepto de El Felicidólogo como marca. Por más que la palabra suena divertida en los oídos
+            de muchas personas, no la registré por juego, sino como algo muy serio. En 2017, estoy cumpliendo 20 años
+            desde que redacté mi misión en la vida: “Ayudar a las personas a ser más felices y autorrealizadas”.
+            También, se cumplen 10 años desde que eché a andar Consultora Proactiva, dedicada al cambio y el crecimiento
+            personal, interpersonal y organizacional. Antes, dediqué 10 años a la docencia universitaria, la
+            comunicación corporativa y la relatoría organizacional en otras consultoras, con foco en realizar mi misión
+            de Felicidólogo, aunque la inspiración de la palabra específica llegara después. En este artículo te voy a
+            resumir algunos aspectos centrales de la Felicidología.</p>
+
+
+          <p>Para mí, como estudioso de la felicidad, esta es algo muy sencillo, que se puede aprender y que da muchos
+            frutos, entre ellos el fruto del verdadero objetivo de la vida humana. Es que la felicidad no es el objetivo
+            de la vida ni tampoco un objetivo por alcanzar en una “vida eterna”. Es una forma de vivir que se puede
+            practicar en esta vida sin ser muy inteligente ni estudioso ni iluminado. No hay que ser especial para ser
+            feliz, porque, como expresó Buda en su más importante sutra, “La felicidad es algo que todos podemos
+            alcanzar, ya que es un estado inherente del ser humano”.</p>
+
+
+
+          <img class="float-right" src="assets/img/equipo trabajo1.webp" style="margin-left: 15px;" width="40%">
+
+          <p>Como me he tomado mi misión de Felicidólogo muy en serio y la he desarrollado principalmente en
+            organizaciones y con trabajadores, creo haber aprendido algunos aspectos centrales sobre la felicidad, sobre
+            todo la felicidad laboral.</p>
+
+
+
+          <p>He dado decenas de talleres en que he tratado directamente el tema de la felicidad o la felicidad laboral.
+            Pero creo que lo más relevante tiene que ver con abordarla como telón de fondo en los diferentes talleres de
+            aprendizaje y coaching grupales que me ha tocado facilitar. Si alguien quiere aprender liderazgo, le
+            conviene ser feliz liderando. Si alguien desea potenciar sus competencias como atendedor de clientes, le
+            conviene aprender a ser feliz en el trato con personas. Quien tiene como objetivo mejorar en gestión del
+            tiempo, está claro que le viene bien usar su tiempo con criterios de felicidad: o para dedicarlo a
+            actividades más felices o para hacer de manera más feliz sus múltiples actividades. La felicidad es,
+            entonces, algo funcional. Y es un tema trasversal a los demás aspectos de la existencia; es una especie de
+            escenario donde se expresan las diferentes facetas de la vida. La felicidad, entendida como una forma de
+            vivir, facilita el desarrollo humano, laboral y organizacional.</p>
+
+
+          <br>
+          <br>
+
+          <p><b>¿Un medio o un fin? El gran error de Aristóteles </b></p>
+
+
+          <p>He sostenido desde hace varios años que la felicidad no es un destino o un objetivo, sino un camino; que la
+            felicidad es una forma de vivir; que la felicidad no es el gran objetivo o fin de la vida de los seres
+            humanos. Estoy convencido de que la felicidad es un medio para un fin mayor. Y no entender esto es lo que
+            llamo “el gran error de Aristóteles”. Este, si bien relaciona a la felicidad con la eudaimonia y el
+            desarrollo de la virtud, también afirma que no existe ningún otro “para qué” y que todas las personas están
+            de acuerdo en eso aunque para unas la felicidad pueda consistir en una cosa y para otras, una cosa
+            diferente.</p>
+          <br>
+          <img class="float-left" src="assets/img/blog2.2.webp" style="margin-right: 15px;" width="40%">
+
+
+          <p>La cultura aristotélico-tomista endiosó el planteamiento del filósofo griego: “El fin supremo del hombre es
+            la felicidad”. Y, junto con eso, en su versión contemporánea nuestra cultura ha olvidado la importancia de
+            desarrollar la virtud para ser feliz. Hoy en día vivimos en un entorno egoísta donde, más que la virtud,
+            importa el éxito económico y donde la felicidad tiende a ser un objetivo inalcanzable para seres
+            insaciables. La mayoría de las personas tiende a querer siempre más y, en ese camino, jamás está del todo
+            satisfecha. Cuando entendemos que la felicidad es el camino mismo y la forma de caminar por él, todo se
+            simplifica.</p>
+
+
+
+          <p>Me tocó volver a explicarlo en el Primer congreso de la felicidad laboral y de la conciencia empresarial,
+            organizado por Socialgrowing y la Usach en junio de 2017. Fue la conferencia Cómo ser felices en el trabajo
+            y los estudios: corrigiendo el gran error de Aristóteles. </p>
+
+
+          <p>La felicidad, argumenté ahí, es un estilo de vida facilitador. Facilita el éxito. Uno de los que yo llamo
+            “mitos de la felicidad” es que “el éxito lleva a la felicidad”. Para mí, es exactamente al revés: la
+            felicidad lleva al éxito. ¿Qué es éxito? Escuché una vez esta definición y, como me hizo mucho sentido,
+            desde entonces es la que ocupo:</p>
+
+
+
+
+
+          <p><em>"El éxito es hacer con tu vida lo que tú quieres hacer con tu vida".</em> </p>
+
+
+          <p>Por supuesto, tengamos claro que es sin dañar los éxitos de otros. Existen la responsabilidad social, el
+            bien común y las demás consideraciones que necesitamos tener como seres que no viven solos y que estamos
+            destinados a aprender a amar.</p>
+
+          <br>
+          <br>
+
+          <p><b>¿Cuál es, entonces, el objetivo de la vida?</b></p>
+
+
+          <p>Por más relevante que pueda ser el éxito, el gran objetivo de la vida tampoco es el éxito, sino la
+            autorrealización; es decir, irse desplegando, como una flor, para desarrollarse e irse de esta vida de una
+            manera distinta de como llegamos a ella. Ojalá, desde luego, mejor de como llegamos. Y ojalá logrando la
+            expresión de nuestro mayor potencial.</p>
+
+
+          <p>Curiosamente, la autorrealización no es exactamente una meta o un objetivo. Es, más bien, un proceso, un
+            camino. Es crecimiento, y cuando nos estamos autorrealizando no dejamos de crecer. Lo clave es que la muerte
+            nos pille en la autorrealización, que es un acto eventualmente permanente. Como decía Picasso, “Cuando
+            llegue la inspiración, que me encuentre trabajando”. Parafraseando su línea de pensamiento: “Cuando llegue
+            la muerte, que me encuentre autorrealizándome”.</p>
+
+
+          <p>Tú puedes saber si estás en tu proceso de autorrealización, es decir, autorrealizándote y autorrealizado,
+            en este preciso día. Para esto, ayuda mucho la meditación, porque es una forma de conectarnos con el aquí y
+            el ahora. También ayuda la atención plena y la concentración en el afán en que estás en cada momento.</p>
+
+
+          <p>Hay veces en que esa conciencia puede ser de tono más sublime; por ejemplo, cuando te sientes capaz de
+            decir: “Podría morirme mañana tranquilo”. No es que te vayas de esta vida sin dejar sueños por cumplir,
+            tareas inconclusas, deudas y sin afectar a otros. De lo que se trata es de partir de esta vida estando
+            tranquilo con tu conciencia. A veces, esta sensación de tranquilidad, que es simultáneamente de gozo y
+            plenitud, puede sentirse más fácilmente cuando has tenido un logro importante para ti recientemente y
+            sientes agradecimiento ante la vida por haberlo conseguido. Es una sensación en la cual felicidad y
+            autorrealización se funden, en algo así como un espacio-tiempo que son eternos, y en los cuales estás
+            conectado intensamente con el flujo primordial, como diría Daniel Taroppio, o en un estado de flujo o en una
+            etapa de florecimiento, como lo describiría la Psicología Positiva.</p>
+          <br>
+          <br>
+          <img class="float-right" src="assets/img/blog2.3.webp" style="margin-left: 15px;" width="70%">
+
+
+
+
+          <p>La vida es una escuela de aprendizaje. Llegamos de una forma, pero podemos irnos de otra. Me encanta esta
+            frase que en algún bendito momento acuñó mi corazón: “No somos responsables de cómo llegamos, pero sí de
+            cómo nos vamos”. Creo que el objetivo sublime de un ser humano es convertirse en el mejor ser humano que
+            pueda ser. Y eso es hoy: aquí y ahora. Necesitamos comprender esto para autorrealizarnos. Nadie sabe si va a
+            estar vivo mañana. Por lo tanto, la autorrealización es un acto que siempre habita en el presente. Y esta
+            comprensión no tiene por qué ser filosófica o profunda. No está reservada para personas de mente brillante
+            ni para seres que se han iluminado. La frase “Cada día tiene su propio afán” tiene que ver con vivir el
+            presente dedicados a lo que ese presente nos presenta, aquí y ahora. Esto probablemente lo viva más
+            profundamente un campesino concentrado en arar la tierra o un ovejero concentrado en trasladar al rebaño que
+            un gerente que siempre está pensando en lo que no hizo ayer o en lo debe hacer mañana.</p>
+
+
+          <br>
+          <br>
+          <p><b>Una concepción más universal de la felicidad</b></p>
+
+
+          <p>Todo ser humano tiene también un propósito por cumplir, su Ikigai, sublime modelo surgido en la cultura
+            japonesa que une cuatro variables (pasión, misión, vocación y profesión), que a su vez nacen de la
+            combinación entre otras cuatro variables: aquello para lo que eres bueno (talentos y habilidades), aquello
+            que te gusta o amas, aquello que el mundo necesita de ti y aquello por lo que te pueden pagar). </p>
+
+          <img class="float-right" src="assets/img/blog2.4.webp" style="margin-left: 15px;" width="40%">
+
+
+          <p>Veo en el Ikigai una expresión fascinante de la autorrealización. Se relaciona mucho con los hallazgos de
+            la Psicología Positiva: la importancia de las fortalezas humanas, del compromiso con aquello para lo que
+            somos buenos y nos apasiona, y una vida con sentido o propósito.</p>
+
+
+          <p>Expresamente elegí esta imagen del Ikigai que pone en negritas lo que se ama y sus derivadas: pasión y
+            misión. En mi opinión, tienen una relevancia mayor. Creo que es más fácil hallar el Ikigai personal cuando
+            nos preguntamos por aquello que amamos. Creo que es más sencillo hacerse bueno en aquello que amamos y
+            encontrar lo que el mundo necesita de nosotros desde aquello que amamos.</p>
+
+
+          <p>Volviendo a la felicidad como un camino para la autorrealización, tengo el convencimiento de que podemos
+            llegar a una concepción de la felicidad que traspase las épocas y los factores socioculturales y económicos.
+            En efecto, existen tantas definiciones de felicidad como épocas, y hoy en día el relativismo imperante
+            exacerba el que la felicidad es una cuestión esencialmente subjetiva.</p>
+
+
+          <p>Uno de mis intentos ha sido el de conceptuar un enfoque de la felicidad que sea más universal.
+            Probablemente estoy influido por las corrientes de retorno a la espiritualidad que también están imperando
+            en un entorno en que cada vez más personas quieren volver a su centro. No pretendo, por lo tanto, dar una
+            definición que sea “la verdad”.</p>
+
+
+          <p>Pero sí me siento seguro en el propósito de comprender la felicidad como algo comprensible, alcanzable y
+            que sirva de base más allá de la obsesión por el éxito financiero o el estatus, y más allá de un objetivo
+            inalcanzable, y más allá del relativismo egoísta del “felicidad es hacer lo que a mí me hace sentir bien, y
+            me da lo mismo lo que sientan los demás o cómo los afecte”. Rechazo esto último porque lo podría decir un
+            sicópata sin ningún remordimiento. Y lo rechazo porque se materializa en comportamientos que generan estrés
+            negativo en las urbes.</p>
+
+          <br>
+          <br>
+          <p><b>Fertilidad o fecundidad</b></p>
+
+
+          <p>Para mí, como para grandes maestros que me han inspirado en este trayecto, la felicidad es una actitud
+            (disposición interna) y una decisión (surgida de la proactividad personal) y consiste principalmente en dos
+            verbos: aceptar (la vida como venga, o, como dice la sabia Byron Katie, “amar lo que es”) y agradecer (lo
+            que vemos como bueno o agradable y lo que vemos como malo o desagradable). Hay otros tres que los
+            complementan: soltar (desapegarse, dejar ir, alejarse), gozar (el momento presente, el aquí y el ahora, y
+            hasta los más mínimos detalles) y cambiar (las circunstancias cambiables o la forma de abordar las no
+            cambiables). </p>
+
+          <img class="float-right" src="assets/img/blog2.5.webp" style="margin-left: 15px;" width="50%">
+
+
+          <p>La felicidad es verbo no sólo a nivel de actitudes. No basta con declaraciones como “Acepto la vida como
+            venga” si eso no se convierte en acciones observables que lo lleven a la práctica. La vida es acción. Y, por
+            eso, la felicidad es verbo también a nivel de acciones concretas. No se trata de ser felices, sino de
+            hacernos felices. En cada actitud y en cada acción vamos actualizando nuestro nivel de felicidad. Y,
+            mientras más felices somos, más sencillo se torna ser una persona exitosa (con conciencia de sus logros en
+            pos de hacer con su vida lo que quiere hacer con ella) y autorrealizada (cumpliendo el propósito y
+            autoconstruyéndose para mejorar en el día a día e irse de la vida mejor de como llegó).</p>
+
+
+          <p>Esta perspectiva es mucho más conectada con la existencia que la de la competencia con otros, el estatus y
+            el éxito entendido como bienestar financiero. Si hay alguien con quien competir, es con uno mismo. Pero no
+            para ir escalando en la escala social, ni para subir en ninguna otra escala de manera cuantitativa. Competir
+            consigo mismo es convertirse en una mejor persona. Y, para ser una mejor persona, la mejor recomendación que
+            conozco es: “Haz lo que esa persona haría”. Sucede que los seres humanos somos en la acción, como nos lo
+            recuerdan las citas “Por sus obras los conoceréis” y “por sus frutos los conoceréis”.</p>
+          <br>
+          <img class="float-left" src="assets/img/blog2.6.webp" style="margin-right: 15px;" width="40%">
+
+
+          <p>Feliz proviene, etimológicamente, de “félix”, que significa “fértil, fecundo”. Entonces, felicidad
+            significa, primigeniamente, fertilidad, fecundidad. Una persona feliz es aquella que da frutos, que da
+            abundancia. Pero no necesariamente económica y no, desde luego, para acumular como Rico Mc Pato. La
+            abundancia es para repartir o al menos para compartir, como nos enseña muy bien la filosofía tras la palabra
+            “Ubuntu”, de la tribu Xhosa. Se resume en “Yo soy porque nosotros somos” y en “¿Qué sacamos con que sea
+            feliz uno de nosotros si nuestros hermanos están tristes?”.</p>
+
+
+          <p>Que felicidad signifique la capacidad de dar frutos es otro argumento en la línea de que la felicidad es un
+            medio para que los seres humanos demos frutos. Y dar frutos es el éxito y la autorrealización como
+            consecuencias de ser felices.</p>
+
+          <br>
+          <br>
+
+          <p><b>El sabor de la vida y la universidad de la vida</p> </b>
+
+
+          <p>Ya son más de 550 consultorías y cursos universitarios los que llevo como facilitador, docente o relator. A
+            un promedio de 20 personas por cada instancia, tengo la maravillosa fortuna de haber conversado sobre la
+            vida personal y laboral con unas 11.000 personas. La información que hay en este río de sabiduría es muy
+            valiosa. He aprendido de la vida lo que todas esas personas me han enseñado. Un buen relator no va solamente
+            a entregar, sino también a recibir.</p>
+
+
+          <img class="float-right" src="assets/img/blog2.7.webp" style="margin-left: 15px;" width="40%">
+
+          <p>Los buenos relatores –y tengo conciencia activa, humildemente, de estar entre ellos– no somos finalmente ni
+            más ni menos que canales de buenas prácticas. Y en las buenas prácticas radica la más profunda sabiduría.
+            Por lo tanto, somos canales de sabiduría, que viene de “sapere”, es decir, de “sabor”. La sabiduría es
+            saborear la vida. Los consultores vamos a conversar con las personas para hacerles preguntas. Y, en sus
+            respuestas, vamos hallando luces que luego sirven para darles algo de luz a otros. Para darles algo de
+            sabor. Saber es saber cómo algo sabe, es decir, encontrarle el sabor a cada instante de la vida. Y es, sobre
+            todo, gozar ese sabor por más amargo que sea, entendiendo por amargo aquello que nos puede causar amargura,
+            pero que es parte de la vida. Si las papilas gustativas tienen receptores del amargor, es porque la vida
+            contempla el sabor amargo en su esencia.</p>
+
+
+
+          <p>He leído a muchos autores y he estudiado varios posgrados, pero con profunda tranquilidad aseguro que lo
+            que más he aprendido ha surgido de la universidad de la vida. En mi caso, una universidad de compartir
+            experiencias, puntos de vista, preguntas, respuestas, a veces grandes discusiones… Pero siempre volviendo al
+            camino común de encontrar luces que, como faros, nos puedan orientar en medio de la maraña de información y
+            de filosofías que coexisten y que, lamentablemente, llevan a algunos a perder su rumbo en el camino de la
+            vida.</p>
+
+
+
+          <p>Las definiciones de felicidad que enseño cuando me toca exponer sobre el tema en conferencias o en
+            entrevistas están extraídas de grandes autores. Sin embargo, he tenido la ética de difundirlas solamente
+            cuando he comprobado la validez de esa sabiduría en la sabiduría de la vida cotidiana de mis compatriotas
+            trabajadores a quienes he conocido en mis consultorías organizacionales.</p>
+
+
+          <p>Mi propia teoría actual de la felicidad tiene como fuentes tanto a sabios consagrados y como a sabios con
+            los que me he topado en persona en la vida cotidiana. Mi propia experiencia de vida no ha sido más que una
+            comprobación más de estos hallazgos, que más que eso son recordatorios de aspectos muy sencillos que, en el
+            mundo actual, resultan también fáciles de olvidar para quien se mantiene en la ilusión de las utopías que
+            venden los medios publicitarios para eternizar el dañino sistema de la sociedad de consumo.</p>
+
+          <br>
+          <br>
+
+          <p><b>Amar lo que es</b></p>
+
+
+
+          <p>No soy un gurú que ande proclamando “la verdad”. Soy El Felicidólogo, es decir, alguien que practica la
+            Felicidología. Esta área del conocimiento estudia la felicidad con un enfoque más universal y más
+            cualitativo que estadístico; pero, sobre todo, se orienta al estudio de la felicidad en la vida práctica, en
+            el día a día, “donde las papas queman”. Y tiene que ver con vivir la vida tal cual es, sin pelearse con
+            ella. Si observo la sonrisa de una persona que dedica su vida laboral a limpiar baños y converso con ella,
+            recabo una información valiosísima: más valiosa que la que se puede hallar en los libros o en los estudios
+            numéricos. Estos también me parecen valiosos. He estado asociado a la Asociación Internacional de Psicología
+            Positiva y creo que esta corriente ha realizado un aporte monumental. Pero pienso que el enfoque cualitativo
+            y casuístico de la Felicidología lo complementa de buena manera. De hecho, este complemento es,
+            curiosamente, un poco anterior, porque mi pasión por la felicidad surgió un año antes de que Martin Seligman
+            fundara la Psicología Positiva en 1998.</p>
+
+
+
+          <p>He procurado orientar la Felicidología a explicar la felicidad de una forma que trascienda épocas. Y, en
+            esta línea de trabajo, he llegado a la visión actitudinal que precisé más arriba. Para mí, la felicidad no
+            es hacer lo que queremos, sino querer lo que hacemos. Se parece a la definición de Jean Paul Sartre:
+            “Felicidad no es hacer lo que nos gusta, sino que nos guste lo que hacemos”. Mi cambio de verbos surgió de
+            un ejercicio que he replicado decenas de veces y que demuestra que hacer las cosas por decisión nos da mucha
+            mayor felicidad que hacerlas por obligación. Es más hermoso vivir la vida por decisión (queriendo, por
+            voluntad) que sintiéndonos obligados (en contra de la voluntad o a regañadientes).</p>
+          <br>
+
+          <img class="float-left" src="assets/img/blog2.8.webp" style="margin-right: 15px;" width="40%">
+
+          <p>Felicidad, reitero a modo de resumen, es una manera de vivir. Es un estado de profunda conexión con la
+            esencia de la vida. La vida es dolor y amor, oscuridad y luz, maldiciones y bendiciones, crisis y
+            oportunidades. Negar su esencia nos desgasta.</p>
+
+
+          <p>Como asevera Byron Katie en Amar lo que es, cada vez que nos peleamos con la realidad terminamos perdiendo.
+            Es posible aprender a ser felices incluso en el dolor, como lo explico en mi conferencia El ave fénix.</p>
+
+
+          <p>Aceptar la vida como viene, agradecerla, gozarla, desapegarnos y cambiar son los verbos claves para
+            hacernos felices mucho más fácilmente de lo que algunos piensan. Y vivir el ahora, como nos enseña Eckhart
+            Tolle, en una alusión fresca del Carpe Diem y profundamente conectada con la sabiduría de Oriente. La
+            felicidad, entonces, no es cosa del otro mundo ni se alcanza después de esta vida. Está al alcance de la
+            mano para todo el que decida hacerse feliz tomando la decisión de seguirla como un camino o una forma de
+            vida. Como afirma Anthony de Mello, la felicidad es una actitud y una decisión.</p>
+
+
+          <p>Cada día tiene su propio afán. Pero existe un afán común: vivir el día como si fuera el último. No conozco
+            mejor manera de conectarnos con el flujo primordial y de ser felices y de estar preparados para que la
+            muerte nos encuentre autorrealizándonos.</p>
+
+
+          <p>Quien no es feliz hoy, ¿por qué habría de serlo mañana?</p>
+<br>
+          <hr>
+
+        </div>
+
+           <!-- Sidebar Widgets Column -->
+           <div class="d-none d-md-block  col-md-4">
+            <div class="position-absolute h-100">
+  
+              <div class="sticky-top" style="padding-top: 110px;">
+                <!--Blogs -->
+                <div class="card my-4">
+                  <h5 class="card-header">Más Publicaciones</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+  
+                        <div class="row">
+                          <a href="./blog1.html" style="text-decoration: none;">
+                            <div class="col-12">
+                              <div class="card"
+                                style="background: url('assets/img/blog1opacidad.png'); background-size: cover; height: 150px; background-position: center;">
+                                <div class="card-body d-flex align-items-center">
+                                  <p class="text-white">Distinciones básicas de la Felicidología</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+  
+  
+                          <a href="./blog3.html" style="text-decoration: none;">
+                            <div class="col-12">
+                              <div class="card"
+                                style="background: url('assets/img/blog2\ opacidad.png'); background-size: cover; height: 150px; background-position: center;">
+                                <div class="card-body d-flex align-items-center">
+                                  <p class="text-white">Seis claves actitudinales para ser felices en el
+                                    trabajo</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Importante-->
+                <div class="card my-4">
+                  <h5 class="card-header">Importante</h5>
+                  <div class="card-body">
+                    <p>Este material se puede reproducir, de manera parcial o total,
+  
+                      online o en forma impresa, citando completa la fuente:
+  
+                      Daniel Seisdedos Reyes, El Felicodólogo ®</p>
+  
+                    <p> www.profelicidad.com
+  
+                      contacto@profelicidad.com
+  
+                      Peñalolén, Santiago de Chile
+  
+                      56 228914706 </p>
+                  </div>
+                </div>
+  
+                <!-- Redes Sociales -->
+                <div class="card my-4">
+                  <h5 class="card-header">Compártenos</h5>
+                  <div class="card-body">
+                    <div class="row d-flex justify-content-around">
+                      <a target="_blank" href="https://www.facebook.com/zentroprofelicidad"><img src="assets/img/facebook.svg" width="40px"></a>
+                      <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/twitter.svg" width="40px"></a>
+                      <a target="_blank" href="https://twitter.com/share?url=http://www.google.cl"><img src="assets/img/email.svg" width="40px"></a>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+  </main>
+  <!-- FOOTER -->
+
+  <footer class="container-fluid pt-5 pb-5 position-relative" style="background-color: #d6ab9a; color:black">
+      <class class="row text-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 bline">
+              <h6>LINKS</h6>
+              <p><a target="_blank" href="https://www.amazon.com/dp/B089P21ZRJ/ref=rdr_kindle_ext_tmb">Libro</a></p>
+              <p><a target="_blank" href="./Copia de presencia en medios.html">Presencia en medios</a></p>
+          </div>
+          <div class="col-md-2 bline social-footer">
+              <h6>SÍGUENOS</h6>
+              <p><i class="fab fa-facebook-f"></i><a target="_blank" href="https://www.facebook.com/zentroprofelicidad">Facebook</a>
+              </p>
+              <p><i class="fab fa-instagram"></i><a target="_blank" href="https://www.instagram.com/zentroprofelicidad/">Instagram</a>
+              </p>
+              <p><i class="fab fa-youtube"></i><a target="_blank"
+                                                  href="https://www.youtube.com/channel/UC-v5QO84KngG2Jx__q_0O4w">Youtube</a>
+              </p>
+          </div>
+          <div class="col-md-2 bline">
+              <img src="assets/img/logo20.png" alt="ProFelicidad" class="logo-footer">
+          </div>
+          <div class="col-md-2 bline">
+              <h6>UBÍCANOS</h6>
+              <p>
+                  <a href="https://www.google.com/maps/place/Camino+La+Pradera+4940,+Penalolen,+Pe%C3%B1alol%C3%A9n,+Regi%C3%B3n+Metropolitana/@-33.5048218,-70.5278676,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d229dcab7693:0x76ea1f2c30b3787f!8m2!3d-33.5048218!4d-70.5256789">Camino
+                      La Pradera 4940, Peñalolen<br> Región
+                      Metropolitana,<br> Santiago. Chile</a></p>
+          </div>
+          <div class="col-md-2">
+
+              <h6>CONTÁCTANOS</h6>
+              <p><a href="tel:+56 9 1234 5678">+569-61881922</a></p>
+              <p><a href="mailto:contacto@profelicidad.com">contacto@profelicidad.com</a></p>
+          </div>
+          <div class="col-md-1"></div>
+      </class>
+  </footer>
+</body>
+
+<script>
+  function activate(key) {
+    let li = document.getElementsByClassName('nav-link');
+    li[0].classList.remove("nav-active");
+    li[1].classList.remove("nav-active");
+    li[2].classList.remove("nav-active");
+    li[3].classList.remove("nav-active");
+    li[4].classList.remove("nav-active");
+    li[key].classList.add("nav-active");
+  }
+
+  function myMap() {
+    const myLatLng = {
+      lat: -33.5048221,
+      lng: -70.5258002
+    };
+    var mapProp = {
+      center: new google.maps.LatLng(-33.5048221, -70.5258002),
+      zoom: 16,
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap "), mapProp);
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+
+      label: {
+        labelClass: "my-custom-class-for-label ",
+        // color: 'black',
+        fontWeight: 'bold',
+        fontSize: "20px ",
+        text: "Zen-Tro Profelicidad ",
+      }
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOX1JjRsrBz4s09EEg8Ytv2MtFHUwE7ZE&callback=myMap ">
+</script>
+
+<script src="assets/js/buscador.js"></script>
